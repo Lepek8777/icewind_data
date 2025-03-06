@@ -1,0 +1,14 @@
+{
+  "values": [
+    "#minecraft:anvil",
+    "minecraft:andesite",
+    "minecraft:stone",
+    "minecraft:diorite",
+    "minecraft:cobblestone",
+    "minecraft:deepslate",
+    "minecraft:cobbled_deepslate",
+    "minecraft:dripstone_block",
+    "minecraft:mycelium",
+    "minecraft:mud"
+  ]
+}
