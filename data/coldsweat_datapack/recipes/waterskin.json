@@ -1,0 +1,38 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"  s",
+		" l",
+		"l"
+	],
+	"key": {
+		"s": "minecraft:string",
+		"l": "minecraft:leather"
+	},
+	"result": {
+		"id": "music_disc_13",
+		"components": {
+			"!minecraft:jukebox_playable": {},
+			"minecraft:consumable": {
+				"consume_seconds": 1000000,
+				"animation": "drink",
+				"has_consume_particles": false
+			},
+			"minecraft:custom_data": {
+				"waterskin": "empty"
+			},
+			"minecraft:custom_model_data": {
+				"floats": [],
+				"strings": [
+					"waterskin"
+				]
+			},
+			"minecraft:rarity": "common",
+			"minecraft:max_stack_size": 1,
+			"minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.waterskin\"}"
+		},
+		"count": 2
+	},
+	"show_notification": true
+}
