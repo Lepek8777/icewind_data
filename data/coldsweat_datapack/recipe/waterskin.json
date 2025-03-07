@@ -2,13 +2,13 @@
 	"type": "minecraft:crafting_shaped",
 	"category": "misc",
 	"pattern": [
-		"  s",
-		" l",
-		"l"
+		"  S",
+		" L",
+		"L"
 	],
 	"key": {
-		"s": "minecraft:string",
-		"l": "minecraft:leather"
+		"L": "minecraft:leather",
+		"S": "minecraft:string"
 	},
 	"result": {
 		"id": "music_disc_13",
@@ -28,7 +28,8 @@
 					"waterskin"
 				]
 			},
-			"minecraft:rarity": "common"
+			"minecraft:rarity": "common",
+			"minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.waterskin\"}"
 		}
 	}
 }
