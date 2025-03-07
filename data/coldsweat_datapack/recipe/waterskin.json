@@ -28,8 +28,7 @@
 					"waterskin"
 				]
 			},
-			"minecraft:rarity": "common",
-			"minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.waterskin\"}"
+			"minecraft:rarity": "common"
 		}
 	}
 }
