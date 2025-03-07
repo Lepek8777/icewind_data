@@ -11,7 +11,7 @@
 		"S": "minecraft:string"
 	},
 	"result": {
-		"id": "music_disc_13",
+		"id": "minecraft:music_disc_13",
 		"components": {
 			"!minecraft:jukebox_playable": {},
 			"minecraft:consumable": {
