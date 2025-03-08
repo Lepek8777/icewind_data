@@ -1,15 +1,12 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"pattern": [
-		"SSS",
-		"LL",
-		"L"
+		"1"
 	],
 	"key": {
-		"L": "minecraft:leather",
-		"S": "minecraft:string"
+		"1": "#minecraft:stone_bricks"
 	},
 	"result": {
-		"id": "minecraft:cut_sandstone"
+		"id": "minecraft:cobblestone"
 	}
 }
