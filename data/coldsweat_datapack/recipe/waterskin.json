@@ -13,7 +13,6 @@
 	"result": {
 		"id": "minecraft:music_disc_13",
 		"components": {
-			"!minecraft:jukebox_playable": {},
 			"minecraft:custom_data": {
 				"waterskin": "empty"
 			},
