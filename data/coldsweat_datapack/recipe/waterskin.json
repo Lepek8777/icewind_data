@@ -10,7 +10,6 @@
 		"S": "minecraft:string"
 	},
 	"result": {
-		"id": "minecraft:cut_sandstone",
-		"components": {}
+		"id": "minecraft:cut_sandstone"
 	}
 }
