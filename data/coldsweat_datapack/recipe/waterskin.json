@@ -1,14 +1,34 @@
 {
 	"type": "minecraft:crafting_shaped",
+	"category": "misc",
 	"pattern": [
-		" $",
-		"##"
+		" S",
+		"LL",
+		"L"
 	],
 	"key": {
-		"#": "minecraft:stone",
-		"$": "minecraft:iron_ingot"
+		"L": "minecraft:leather",
+		"S": "minecraft:string"
 	},
 	"result": {
-		"id": "minecraft:cobblestone"
+		"id": "minecraft:music_disc_13",
+		"components": {
+			"!minecraft:jukebox_playable": {},
+			"minecraft:consumable": {
+				"consume_seconds": 1000000,
+				"animation": "drink",
+				"has_consume_particles": false
+			},
+			"minecraft:custom_data": {
+				"waterskin": "empty"
+			},
+			"minecraft:custom_model_data": {
+				"strings": [
+					"waterskin"
+				]
+			},
+			"minecraft:rarity": "common",
+			"minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.waterskin\"}"
+		}
 	}
 }
