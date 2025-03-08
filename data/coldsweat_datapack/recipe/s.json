@@ -1,0 +1,33 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"RRR",
+		"GNG",
+		"GHG"
+	],
+	"key": {
+		"R": "minecraft:resin_brick",
+		"G": "minecraft:gold_ingot",
+		"N": "minecraft:nether_star",
+		"H": "minecraft:heavy_core"
+	},
+	"result": {
+		"id": "minecraft:music_disc_stal",
+		"components": {
+			"minecraft:custom_model_data": {
+				"strings": [
+					"gwiazdka_czesc1"
+				],
+				"colors": []
+			},
+			"!minecraft:jukebox_playable": {},
+			"minecraft:item_name": "[\"\",{\"text\":\"Gwiazda\",\"italic\":false}]",
+			"minecraft:rarity": "rare",
+			"minecraft:custom_data": {
+				"gwiazdka_czesc": "1"
+			}
+		},
+		"count": 1
+	}
+}
