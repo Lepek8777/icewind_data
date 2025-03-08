@@ -11,10 +11,7 @@
 		"S": "minecraft:string"
 	},
 	"result": {
-		"id": "minecraft:music_disc_13",
-		"components": {
-			"minecraft:rarity": "common",
-			"minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.waterskin\"}"
-		}
+		"id": "minecraft:cut_sandstone",
+		"components": {}
 	}
 }
