@@ -1,10 +1,8 @@
 {
 	"type": "minecraft:crafting_shaped",
-	"category": "misc",
 	"pattern": [
 		" S",
-		"LL",
-		"L"
+		"LL"
 	],
 	"key": {
 		"L": "minecraft:leather",
@@ -29,6 +27,7 @@
 			},
 			"minecraft:rarity": "common",
 			"minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.waterskin\"}"
-		}
+		},
+		"count": 1
 	}
 }
