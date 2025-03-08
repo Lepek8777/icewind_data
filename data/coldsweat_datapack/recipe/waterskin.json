@@ -6,8 +6,8 @@
 		"#"
 	],
 	"key": {
-		"#": "minecraft:leather",
-		"$": "minecraft:string"
+		"#": "minecraft:stone",
+		"$": "minecraft:iron_ingot"
 	},
 	"result": {
 		"id": "minecraft:cobblestone"
