@@ -5,6 +5,7 @@
 			"conditions": {
 				"item": {
 					"items": "music_disc_13",
+					"count": 1,
 					"predicates": {
 						"minecraft:custom_data": {
 							"waterskin": "empty"
@@ -14,7 +15,11 @@
 			}
 		}
 	},
-	"requirements": [],
+	"requirements": [
+		[
+			"item_used"
+		]
+	],
 	"rewards": {
 		"function": "coldsweat_datapack:waterskin/empty_use"
 	}
