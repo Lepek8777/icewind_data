@@ -13,9 +13,6 @@
 	"result": {
 		"id": "minecraft:music_disc_13",
 		"components": {
-			"minecraft:custom_data": {
-				"waterskin": "empty"
-			},
 			"minecraft:rarity": "common",
 			"minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.waterskin\"}"
 		}
