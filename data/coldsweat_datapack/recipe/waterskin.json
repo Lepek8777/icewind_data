@@ -17,11 +17,6 @@
 			"minecraft:custom_data": {
 				"waterskin": "empty"
 			},
-			"minecraft:custom_model_data": {
-				"strings": [
-					"waterskin"
-				]
-			},
 			"minecraft:rarity": "common",
 			"minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.waterskin\"}"
 		}
