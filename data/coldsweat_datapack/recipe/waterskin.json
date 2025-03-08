@@ -1,5 +1,6 @@
 {
 	"type": "minecraft:crafting_shaped",
+	"category": "misc",
 	"pattern": [
 		" S",
 		"LL"
@@ -29,5 +30,6 @@
 			"minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.waterskin\"}"
 		},
 		"count": 1
-	}
+	},
+	"show_notification": true
 }
