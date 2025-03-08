@@ -1,2 +1,2 @@
-advancement revoke @s only coldsweat_datapack:empty_use
+coldsweat_datapack:waterskin_empty
 say used
