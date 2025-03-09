@@ -5,3 +5,4 @@ function coldsweat_datapack:schedule2
 function coldsweat_datapack:schedule3
 function coldsweat_datapack:schedule4
 function coldsweat_datapack:schedule5
+scoreboard objectives add sc_hand_fan dummy
