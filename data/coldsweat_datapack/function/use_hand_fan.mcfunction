@@ -3,7 +3,7 @@ say 2
 
 scoreboard players add @s sc_hand_fan 1
 
-effect give @s[scores={sc_hand_fan=60..}] minecraft:hunger 1 0 true
-scoreboard players remove @s[scores={sc_hand_fan=60..}] sc_temp 1
+effect give @s[scores={sc_hand_fan=30..}] minecraft:hunger 1 0 true
+scoreboard players remove @s[scores={sc_hand_fan=30..}] sc_temp 1
 
-scoreboard players reset @s[scores={sc_hand_fan=60..}] sc_hand_fan
+scoreboard players reset @s[scores={sc_hand_fan=30..}] sc_hand_fan
