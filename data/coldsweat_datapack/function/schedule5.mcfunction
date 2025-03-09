@@ -44,4 +44,12 @@ execute as @a[gamemode=!spectator,gamemode=!creative] at @s positioned over moti
 
 gamerule doImmediateRespawn true
 
+execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=120..}] if items entity @s armor.body *[minecraft:enchantments={levels:{"minecraft:fire_protection":1}}] if items entity @s armor.chest *[minecraft:enchantments={levels:{"minecraft:fire_protection":1}}] if items entity @s armor.feet *[minecraft:enchantments={levels:{"minecraft:fire_protection":1}}] if items entity @s armor.legs *[minecraft:enchantments={levels:{"minecraft:fire_protection":1}}] run scoreboard players remove @s sc_temp 1
+execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=120..}] if items entity @s armor.body *[minecraft:enchantments={levels:{"minecraft:fire_protection":2}}] if items entity @s armor.chest *[minecraft:enchantments={levels:{"minecraft:fire_protection":2}}] if items entity @s armor.feet *[minecraft:enchantments={levels:{"minecraft:fire_protection":2}}] if items entity @s armor.legs *[minecraft:enchantments={levels:{"minecraft:fire_protection":2}}] run scoreboard players remove @s sc_temp 2
+execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=120..}] if items entity @s armor.body *[minecraft:enchantments={levels:{"minecraft:fire_protection":3}}] if items entity @s armor.chest *[minecraft:enchantments={levels:{"minecraft:fire_protection":3}}] if items entity @s armor.feet *[minecraft:enchantments={levels:{"minecraft:fire_protection":3}}] if items entity @s armor.legs *[minecraft:enchantments={levels:{"minecraft:fire_protection":3}}] run scoreboard players remove @s sc_temp 3
+execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=120..}] if items entity @s armor.body *[minecraft:enchantments={levels:{"minecraft:fire_protection":4}}] if items entity @s armor.chest *[minecraft:enchantments={levels:{"minecraft:fire_protection":4}}] if items entity @s armor.feet *[minecraft:enchantments={levels:{"minecraft:fire_protection":4}}] if items entity @s armor.legs *[minecraft:enchantments={levels:{"minecraft:fire_protection":4}}] run scoreboard players remove @s sc_temp 4
+
+
+
+
 schedule function coldsweat_datapack:schedule5 10s
