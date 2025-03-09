@@ -1,3 +1,5 @@
+say 2
+
 scoreboard players add @s sc_hand_fan 1
 
 effect give @s[scores={sc_hand_fan=10..}] minecraft:hunger 1 0 true
