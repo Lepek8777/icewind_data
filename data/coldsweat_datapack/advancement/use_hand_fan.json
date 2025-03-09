@@ -1,0 +1,26 @@
+{
+	"criteria": {
+		"item_used": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"items": "music_disc_11",
+					"count": 1,
+					"predicates": {
+						"minecraft:custom_data": {
+							"hand_fan": "1"
+						}
+					}
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"item_used"
+		]
+	],
+	"rewards": {
+		"function": "coldsweat_datapack:use_hand_fan"
+	}
+}
