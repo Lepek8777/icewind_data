@@ -1,3 +1,4 @@
+advancement revoke @s only coldsweat_datapack:use_hand_fan
 say 2
 
 scoreboard players add @s sc_hand_fan 1
