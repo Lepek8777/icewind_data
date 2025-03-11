@@ -19,7 +19,8 @@
 				"has_consume_particles": false
 			},
 			"minecraft:custom_data": {
-				"waterskin": "empty"
+				"waterskin": "empty",
+				"iswaterskin": "true"
 			},
 			"minecraft:custom_model_data": {
 				"strings": [
