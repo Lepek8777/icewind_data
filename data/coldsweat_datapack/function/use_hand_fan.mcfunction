@@ -4,6 +4,6 @@ scoreboard players add @s[gamemode=!creative,gamemode=!spectator] sc_hand_fan 1
 
 scoreboard players remove @s[scores={sc_hand_fan=12..},gamemode=!creative,gamemode=!spectator] sc_temp 1
 
-execute as @a[gamemode=!spectator,scores={sc_hand_fan=12..}] at @s run playsound minecraft:item.armor.equip_leather master @s ~ ~ ~ 0.16 0.59
+execute as @a[gamemode=!spectator,scores={sc_hand_fan=12..}] at @s run playsound minecraft:item.armor.equip_leather master @s ~ ~ ~ 1 0.59
 
 scoreboard players reset @s[scores={sc_hand_fan=12..},gamemode=!creative,gamemode=!spectator] sc_hand_fan
