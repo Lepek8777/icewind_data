@@ -2,7 +2,8 @@
 	"function": "minecraft:set_components",
 	"components": {
 		"minecraft:custom_data": {
-			"waterskin": "neutral"
+			"waterskin": "neutral",
+			"iswaterskin": "true"
 		},
 		"minecraft:custom_model_data": {
 			"strings": [
