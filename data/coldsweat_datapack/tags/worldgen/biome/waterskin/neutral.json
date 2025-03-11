@@ -1,1 +1,30 @@
-
+{
+  "values": [
+    "minecraft:plains",
+    "minecraft:bamboo_jungle",
+    "minecraft:beach",
+    "minecraft:dark_forest",
+    "minecraft:deep_dark",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:forest",
+    "minecraft:lukewarm_ocean",
+    "minecraft:meadow",
+    "minecraft:ocean",
+    "minecraft:river",
+    "minecraft:swamp",
+    "minecraft:pale_garden",
+    "minecraft:birch_forest",
+    "minecraft:cherry_grove",
+    "minecraft:deep_ocean",
+    "minecraft:end_barrens",
+    "minecraft:dripstone_caves",
+    "minecraft:end_highlands",
+    "minecraft:end_midlands",
+    "minecraft:lush_caves",
+    "minecraft:old_growth_birch_forest",
+    "minecraft:small_end_islands",
+    "minecraft:stony_peaks",
+    "minecraft:sunflower_plains",
+    "minecraft:the_end"
+  ]
+}
