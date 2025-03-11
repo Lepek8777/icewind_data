@@ -8,7 +8,6 @@
 					"count": 1,
 					"predicates": {
 						"minecraft:custom_data": {
-							"waterskin": "empty",
 							"iswaterskin": "true"
 						}
 					}
