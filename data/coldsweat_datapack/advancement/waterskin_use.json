@@ -8,7 +8,8 @@
 					"count": 1,
 					"predicates": {
 						"minecraft:custom_data": {
-							"waterskin": "empty"
+							"waterskin": "empty",
+							"iswaterskin": "true"
 						}
 					}
 				}
@@ -21,6 +22,6 @@
 		]
 	],
 	"rewards": {
-		"function": "coldsweat_datapack:waterskin/empty_use"
+		"function": "coldsweat_datapack:waterskin/use"
 	}
 }
