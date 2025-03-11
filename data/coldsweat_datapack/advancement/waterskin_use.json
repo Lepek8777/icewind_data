@@ -7,9 +7,7 @@
 					"items": "music_disc_13",
 					"count": 1,
 					"predicates": {
-						"minecraft:custom_data": {
-							"iswaterskin": "true"
-						}
+						"minecraft:custom_data": "{iswaterskin: "true"}"
 					}
 				}
 			}
