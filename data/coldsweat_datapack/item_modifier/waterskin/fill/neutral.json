@@ -1,0 +1,15 @@
+{
+	"function": "minecraft:set_components",
+	"components": {
+		"minecraft:custom_data": {
+			"waterskin": "neutral"
+		},
+		"minecraft:custom_model_data": {
+			"strings": [
+				"filled_waterskin"
+			]
+		},
+		"minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.filled_waterskin\"}"
+	},
+	"conditions": []
+}
