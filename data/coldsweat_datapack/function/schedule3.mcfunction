@@ -15,4 +15,4 @@ execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=1100..}] ru
 execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=1250..}] run damage @s 12.5 minecraft:on_fire
 
 
-schedule function coldsweat_datapack:schedule3 4s
+schedule function coldsweat_datapack:schedule3 5s
