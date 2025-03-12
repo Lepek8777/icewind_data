@@ -28,7 +28,11 @@
 				]
 			},
 			"minecraft:rarity": "common",
-			"minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.waterskin\"}"
+			"minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.waterskin\"}",
+			"minecraft:use_cooldown": {
+				"seconds": 3.5,
+				"cooldown_group": "waterskin_empty"
+			}
 		},
 		"count": 1
 	},
