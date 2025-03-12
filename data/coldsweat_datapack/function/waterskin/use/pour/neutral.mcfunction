@@ -6,5 +6,5 @@ playsound coldsweat_namespace:item.waterskin.pour player @a ~ ~ ~ 0.2 1
 scoreboard players remove @s[scores={sc_temp=10..}] sc_temp 10
 scoreboard players add @s[scores={sc_temp=..-10}] sc_temp 10
 
-scoreboard players remove @a[scores={sc_temp=10..},gamemode=!spectator,gamemode=!creative,distance=..0.8] sc_temp 5
-scoreboard players add @a[scores={sc_temp=..-10},gamemode=!spectator,gamemode=!creative,distance=..0.8] sc_temp 5
+scoreboard players remove @a[scores={sc_temp=10..},gamemode=!spectator,gamemode=!creative,distance=..0.8] sc_temp 3
+scoreboard players add @a[scores={sc_temp=..-10},gamemode=!spectator,gamemode=!creative,distance=..0.8] sc_temp 3
