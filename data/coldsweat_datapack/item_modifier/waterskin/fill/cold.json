@@ -10,7 +10,11 @@
 				"waterskin_cold"
 			]
 		},
-		"minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.filled_waterskin\"}"
+		"minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.filled_waterskin\"}",
+		"minecraft:use_cooldown": {
+			"seconds": 2,
+			"cooldown_group": "waterskin_full"
+		}
 	},
 	"conditions": []
 }
