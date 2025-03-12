@@ -26,3 +26,6 @@ scoreboard players reset @a[scores={sc_death=1..}] sc_death
 
 execute as @a[gamemode=!spectator] at @s if items entity @s weapon.offhand minecraft:music_disc_11[minecraft:custom_data={hand_fan: "true"}] run item modify entity @s weapon.offhand coldsweat_datapack:lock_hand_fan
 execute as @a[gamemode=!spectator] at @s if items entity @s weapon.mainhand minecraft:music_disc_11[minecraft:custom_data={hand_fan: "true"},!minecraft:consumable] run item modify entity @s weapon.mainhand coldsweat_datapack:unlock_hand_fan
+
+execute as @a[gamemode=!spectator] at @s if predicate coldsweat_datapack:is_sneaking if items entity @s weapon.mainhand minecraft:music_disc_11[minecraft:custom_data={iswaterskin: "true"}] unless items entity @s weapon.mainhand *[minecraft:custom_data={waterskin: "empty"}] run item modify entity @s weapon.mainhand coldsweat_datapack:waterskin/animation/pouring
+execute as @a[gamemode=!spectator] at @s unless predicate coldsweat_datapack:is_sneaking if items entity @s weapon.mainhand minecraft:music_disc_11[minecraft:custom_data={iswaterskin: "true"}] unless items entity @s weapon.mainhand *[minecraft:custom_data={waterskin: "empty"}] run item modify entity @s weapon.mainhand coldsweat_datapack:waterskin/animation/normal
