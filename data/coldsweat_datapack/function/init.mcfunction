@@ -6,3 +6,7 @@ function coldsweat_datapack:schedule3
 function coldsweat_datapack:schedule4
 function coldsweat_datapack:schedule5
 scoreboard objectives add sc_hand_fan dummy
+
+scoreboard objectives add sc_waterskin.cold dummy
+scoreboard objectives add sc_waterskin.neutral dummy
+scoreboard objectives add sc_waterskin.hot dummy
