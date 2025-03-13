@@ -5,4 +5,4 @@ playsound coldsweat_namespace:item.waterskin.pour player @a ~ ~ ~ 0.2 1
 
 scoreboard players remove @s sc_temp 10
 
-scoreboard players remove @a[gamemode=!spectator,gamemode=!creative,distance=..0.8] sc_temp 5
+scoreboard players remove @a[gamemode=!spectator,gamemode=!creative,distance=..0.8,limit=3,sort=nearest] sc_temp 5
