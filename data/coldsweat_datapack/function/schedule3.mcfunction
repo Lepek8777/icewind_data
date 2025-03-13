@@ -18,13 +18,13 @@ execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=1250..}] ru
 
 scoreboard players remove @a[gamemode=!spectator,scores={sc_waterskin.neutral=1..,sc_temp=10..}] sc_temp 1
 scoreboard players add @a[gamemode=!spectator,scores={sc_waterskin.neutral=1..,sc_temp=..-10}] sc_temp 1
-scoreboard players remove @a[gamemode=!spectator,scores={sc_waterskin.neutral=1}] sc_waterskin.neutral 1
+scoreboard players remove @a[gamemode=!spectator,scores={sc_waterskin.neutral=1..}] sc_waterskin.neutral 1
 
 scoreboard players remove @a[gamemode=!spectator,scores={sc_waterskin.cold=1..}] sc_temp 1
-scoreboard players remove @a[gamemode=!spectator,scores={sc_waterskin.cold=1}] sc_waterskin.cold 1
+scoreboard players remove @a[gamemode=!spectator,scores={sc_waterskin.cold=1..}] sc_waterskin.cold 1
 
 scoreboard players add @a[gamemode=!spectator,scores={sc_waterskin.hot=1..}] sc_temp 1
-scoreboard players remove @a[gamemode=!spectator,scores={sc_waterskin.hot=1}] sc_waterskin.hot 1
+scoreboard players remove @a[gamemode=!spectator,scores={sc_waterskin.hot=1..}] sc_waterskin.hot 1
 
 
 
