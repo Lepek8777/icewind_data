@@ -15,4 +15,17 @@ execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=1100..}] ru
 execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=1250..}] run damage @s 12.5 minecraft:on_fire
 
 
+
+scoreboard players remove @a[gamemode=!spectator,scores={sc_waterskin.neutral=1..,sc_temp=10..}] sc_temp 1
+scoreboard players add @a[gamemode=!spectator,scores={sc_waterskin.neutral=1..,sc_temp=..-10}] sc_temp 1
+scoreboard players remove @a[gamemode=!spectator,scores={sc_waterskin.neutral=1}] sc_waterskin.neutral 1
+
+scoreboard players remove @a[gamemode=!spectator,scores={sc_waterskin.cold=1..}] sc_temp 1
+scoreboard players remove @a[gamemode=!spectator,scores={sc_waterskin.cold=1}] sc_waterskin.cold 1
+
+scoreboard players add @a[gamemode=!spectator,scores={sc_waterskin.hot=1..}] sc_temp 1
+scoreboard players remove @a[gamemode=!spectator,scores={sc_waterskin.hot=1}] sc_waterskin.hot 1
+
+
+
 schedule function coldsweat_datapack:schedule3 5s
