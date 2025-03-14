@@ -31,6 +31,10 @@ execute as @a[gamemode=!spectator] run scoreboard players operation @s sc_waters
 execute as @a[gamemode=!spectator] run scoreboard players operation @s sc_waterskin.total += @s sc_waterskin.hot
 
 execute as @a[gamemode=!spectator,scores={sc_waterskin.total=60..}] run effect give @s minecraft:nausea 6 0 true
+execute as @a[gamemode=!spectator,scores={sc_waterskin.total=70..}] run damage @s 3 coldsweat_datapack:hyponatremia
+execute as @a[gamemode=!spectator,scores={sc_waterskin.total=80..}] run damage @s 3.5 coldsweat_datapack:hyponatremia
+execute as @a[gamemode=!spectator,scores={sc_waterskin.total=95..}] run damage @s 5 coldsweat_datapack:hyponatremia
+
 execute as @a[gamemode=!spectator] run scoreboard players reset @s sc_waterskin.total
 
 
