@@ -20,8 +20,7 @@ scoreboard players set @a[tag=!start] sc_temp 0
 tag @a[tag=!start] add start
 
 
-scoreboard players set @a[scores={sc_death=1..}] sc_temp 0
-scoreboard players reset @a[scores={sc_death=1..}] sc_death
+scoreboard players reset @a[scores={sc_death=1..}]
 
 
 execute as @a[gamemode=!spectator] at @s if items entity @s weapon.offhand minecraft:music_disc_11[minecraft:custom_data={hand_fan: "true"}] run item modify entity @s weapon.offhand coldsweat_datapack:lock_hand_fan
