@@ -26,6 +26,11 @@ scoreboard players remove @a[gamemode=!spectator,scores={sc_waterskin.cold=1..}]
 scoreboard players add @a[gamemode=!spectator,scores={sc_waterskin.hot=1..}] sc_temp 1
 scoreboard players remove @a[gamemode=!spectator,scores={sc_waterskin.hot=1..}] sc_waterskin.hot 1
 
+execute as @a[gamemode=!spectator] run scoreboard players operation @s sc_waterskin.total += @s sc_waterskin.cold
+execute as @a[gamemode=!spectator] run scoreboard players operation @s sc_waterskin.total += @s sc_waterskin.neutral
+execute as @a[gamemode=!spectator] run scoreboard players operation @s sc_waterskin.total += @s sc_waterskin.hot
+
+execute as @a[gamemode=!spectator,scores={sc_waterskin.total=60..}] run effect give @s minecraft:nausea 6 0
 
 
 schedule function coldsweat_datapack:schedule3 5s
