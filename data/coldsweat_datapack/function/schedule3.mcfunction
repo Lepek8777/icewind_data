@@ -31,7 +31,6 @@ execute as @a[gamemode=!spectator] run scoreboard players operation @s sc_waters
 execute as @a[gamemode=!spectator] run scoreboard players operation @s sc_waterskin.total += @s sc_waterskin.hot
 
 execute as @a[gamemode=!spectator,scores={sc_waterskin.total=60..}] run effect give @s minecraft:nausea 6 0 true
-execute as @a run tellraw @s {"score":{"name":"@s","objective":"sc_waterskin.total"}}
 execute as @a[gamemode=!spectator] run scoreboard players reset @s sc_waterskin.total
 
 
