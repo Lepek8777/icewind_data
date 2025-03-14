@@ -2,5 +2,6 @@
   "message_id": "hyponatremia",
   "exhaustion": 0,
   "scaling": "never",
+  "effects": "freezing",
   "death_message_type": "default"
 }
