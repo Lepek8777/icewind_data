@@ -5,7 +5,6 @@
       "conditions": {
         "item": {
           "items": "music_disc_13",
-          "count": 1,
           "predicates": {
             "minecraft:custom_data": {
               "isice_cream": "true"
