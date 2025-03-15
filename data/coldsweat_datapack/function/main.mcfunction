@@ -38,7 +38,6 @@ execute as @a[gamemode=!spectator] at @s if predicate coldsweat_datapack:is_snea
 
 execute as @a[gamemode=!spectator] at @s unless predicate coldsweat_datapack:is_sneaking if items entity @s weapon.mainhand minecraft:music_disc_13[minecraft:custom_data~{iswaterskin: "true"}] run item modify entity @s weapon.mainhand coldsweat_datapack:waterskin/animation/normal
 
-execute as @a[gamemode=!spectator,scores={sc_waterskin.total=40..}] run effect give @s minecraft:nausea 4 0 true
 
 #execute as @a[gamemode=!spectator] at @s anchored eyes unless predicate coldsweat_datapack:is_sneaking unless block ^ ^ ^2.5 #coldsweat_datapack:water unless block ^ ^ ^2 #coldsweat_datapack:water if items entity @s weapon.mainhand *[minecraft:custom_data~{waterskin:"cold",iswaterskin:"true"}] run item modify entity @s weapon.mainhand coldsweat_datapack:waterskin/animation/drinking
 #execute as @a[gamemode=!spectator] at @s anchored eyes unless predicate coldsweat_datapack:is_sneaking unless block ^ ^ ^2.5 #coldsweat_datapack:water unless block ^ ^ ^2 #coldsweat_datapack:water if items entity @s weapon.mainhand *[minecraft:custom_data~{waterskin:"neutral",iswaterskin:"true"}] run item modify entity @s weapon.mainhand coldsweat_datapack:waterskin/animation/drinking
