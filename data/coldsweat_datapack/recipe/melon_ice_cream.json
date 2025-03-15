@@ -28,7 +28,7 @@
       },
       "!minecraft:jukebox_playable": {},
       "minecraft:consumable": {
-        "consume_seconds": 1.6,
+        "consume_seconds": 1.5,
         "animation": "eat",
         "sound": "minecraft:entity.generic.eat",
         "on_consume_effects": [
