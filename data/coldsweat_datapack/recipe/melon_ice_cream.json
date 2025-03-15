@@ -28,7 +28,7 @@
       },
       "!minecraft:jukebox_playable": {},
       "minecraft:consumable": {
-        "consume_seconds": 1.4,
+        "consume_seconds": 1.6,
         "animation": "eat",
         "sound": "minecraft:entity.generic.eat",
         "on_consume_effects": [
@@ -38,13 +38,27 @@
               {
                 "id": "minecraft:slowness",
                 "amplifier": 0,
-                "duration": 80,
+                "duration": 180,
                 "ambient": true,
                 "show_particles": true,
                 "show_icon": true
               }
             ],
             "probability": 0.6
+          },
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:mining_fatigue",
+                "amplifier": 1,
+                "duration": 80,
+                "ambient": true,
+                "show_particles": true,
+                "show_icon": true
+              }
+            ],
+            "probability": 0.3
           }
         ]
       },
@@ -57,8 +71,8 @@
         "ice_cream": "melon"
       },
       "minecraft:food": {
-        "nutrition": 12,
-        "saturation": 1,
+        "nutrition": 1,
+        "saturation": 1.3,
         "can_always_eat": false
       }
     }
