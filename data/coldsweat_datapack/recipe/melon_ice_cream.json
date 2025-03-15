@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "NUN",
+    "NMN",
+    " S"
+  ],
+  "key": {
+    "N": [
+      "minecraft:snow_block",
+      "minecraft:snow",
+      "minecraft:snowball",
+      "minecraft:ice"
+    ],
+    "S": "minecraft:stick",
+    "M": "minecraft:melon_slice",
+    "U": "minecraft:sugar"
+  },
+  "result": {
+    "id": "minecraft:music_disc_13",
+    "components": {
+      "minecraft:item_name": "{\"translate\":\"melon_ice_cream\"}",
+      "minecraft:custom_model_data": {
+        "strings": [
+          "melon_ice_cream"
+        ]
+      },
+      "!minecraft:jukebox_playable": {},
+      "minecraft:consumable": {
+        "consume_seconds": 1.2,
+        "animation": "eat",
+        "sound": "minecraft:entity.generic.eat",
+        "has_consume_particles": true,
+        "on_consume_effects": [
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:slowness",
+                "amplifier": 0,
+                "duration": 8,
+                "ambient": true,
+                "show_particles": true,
+                "show_icon": true
+              }
+            ],
+            "probability": 0.6
+          }
+        ]
+      },
+      "minecraft:rarity": "common",
+      "minecraft:use_remainder": {
+        "id": "stick"
+      },
+      "minecraft:max_stack_size": 64
+    }
+  }
+}
