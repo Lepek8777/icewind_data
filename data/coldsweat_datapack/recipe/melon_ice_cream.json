@@ -68,7 +68,8 @@
       },
       "minecraft:max_stack_size": 64,
       "minecraft:custom_data": {
-        "ice_cream": "melon"
+        "ice_cream": "melon",
+        "isice_cream": "true"
       },
       "minecraft:food": {
         "nutrition": 1,
