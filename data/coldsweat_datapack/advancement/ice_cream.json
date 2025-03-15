@@ -21,6 +21,6 @@
     ]
   ],
   "rewards": {
-    "function": "coldsweat_datapack:waterskin/use"
+    "function": "coldsweat_datapack:ice_cream"
   }
 }
