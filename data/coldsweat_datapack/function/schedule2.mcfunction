@@ -28,6 +28,5 @@ execute as @a[gamemode=!creative,gamemode=!spectator,x=-9999999,y=480,z=-9999999
 execute as @a[gamemode=!spectator,gamemode=!creative] at @s if biome ~ ~ ~ #coldsweat_datapack:0 if block ~ ~ ~ water run scoreboard players remove @s sc_temp 5
 execute as @a[gamemode=!spectator,gamemode=!creative] at @s if biome ~ ~ ~ #coldsweat_datapack:1 if block ~ ~ ~ water run scoreboard players remove @s sc_temp 2
 
-execute as @a[gamemode=!spectator,scores={sc_waterskin.total=40..}] run effect give @s minecraft:nausea 4 0 true
 
 schedule function coldsweat_datapack:schedule2 0.5s
