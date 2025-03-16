@@ -1,7 +1,7 @@
 {
   "type": "minecraft:campfire_cooking",
   "category": "food",
-  "cookingtime": 90,
+  "cookingtime": 220,
   "experience": 0.35,
   "ingredient": "egg",
   "result": {
