@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 90,
+  "experience": 0.35,
+  "ingredient": "egg",
+  "result": {
+    "id": "minecraft:music_disc_13",
+    "components": {
+      "!minecraft:jukebox_playable": {},
+      "minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.cooked_egg\"}",
+      "minecraft:custom_model_data": {
+        "strings": [
+          "cooked_egg"
+        ]
+      },
+      "minecraft:consumable": {
+        "consume_seconds": 1.3,
+        "animation": "eat",
+        "sound": "minecraft:entity.generic.eat",
+        "has_consume_particles": true,
+        "on_consume_effects": []
+      },
+      "minecraft:rarity": "common",
+      "minecraft:max_stack_size": 16,
+      "minecraft:custom_data": {
+        "iscooked_egg": "true"
+      },
+      "minecraft:food": {
+        "nutrition": 1,
+        "saturation": 1.5,
+        "can_always_eat": false
+      }
+    }
+  }
+}
