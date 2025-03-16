@@ -29,9 +29,9 @@ execute as @a[gamemode=!spectator,gamemode=!creative] at @s if biome ~ ~ ~ #cold
 execute as @a[gamemode=!spectator,gamemode=!creative] at @s if biome ~ ~ ~ #coldsweat_datapack:1 if block ~ ~ ~ water run scoreboard players remove @s sc_temp 2
 
 
-execute as @a at @s if items entity @s inventory.* #coldsweat_datapack:crafting/hand_fan run recipe give @s coldsweat_datapack:hand_fan
-execute as @a at @s if items entity @s inventory.* #coldsweat_datapack:crafting/waterskin run recipe give @s coldsweat_datapack:waterskin
-execute as @a at @s if items entity @s inventory.* #coldsweat_datapack:crafting/sweet_berry_ice_cream run recipe give @s coldsweat_datapack:sweet_berry_ice_cream
-execute as @a at @s if items entity @s inventory.* #coldsweat_datapack:crafting/melon_ice_cream run recipe give @s coldsweat_datapack:melon_ice_cream
+execute as @a at @s if items entity @s container.* #coldsweat_datapack:crafting/hand_fan run recipe give @s coldsweat_datapack:hand_fan
+execute as @a at @s if items entity @s container.* #coldsweat_datapack:crafting/waterskin run recipe give @s coldsweat_datapack:waterskin
+execute as @a at @s if items entity @s container.* #coldsweat_datapack:crafting/sweet_berry_ice_cream run recipe give @s coldsweat_datapack:sweet_berry_ice_cream
+execute as @a at @s if items entity @s container.* #coldsweat_datapack:crafting/melon_ice_cream run recipe give @s coldsweat_datapack:melon_ice_cream
 
 schedule function coldsweat_datapack:schedule2 0.5s
