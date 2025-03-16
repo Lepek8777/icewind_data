@@ -27,8 +27,8 @@
         "iscooked_egg": "true"
       },
       "minecraft:food": {
-        "nutrition": 1,
-        "saturation": 1.5,
+        "nutrition": 2,
+        "saturation": 2.5,
         "can_always_eat": false
       }
     }
