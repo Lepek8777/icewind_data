@@ -1,7 +1,7 @@
 {
   "values": [
     "minecraft:leather",
-    "minecraft:strings",
+    "minecraft:string",
     "minecraft:bucket",
     "minecraft:water_bucket"
   ]
