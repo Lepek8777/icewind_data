@@ -41,4 +41,7 @@ execute as @a at @s if items entity @s container.* egg run recipe give @s coldsw
 execute as @a[gamemode=!spectator] at @s if items entity @s player.cursor minecraft:lily_pad run item modify entity @s player.cursor coldsweat_datapack:update_lily_pad
 execute as @a[gamemode=!spectator] at @s if items entity @s weapon.mainhand minecraft:lily_pad run item modify entity @s weapon.mainhand coldsweat_datapack:update_lily_pad
 
+execute as @e[type=minecraft:drowned,tag=!drowned_done] at @s if biome ~ ~ ~ #coldsweat_datapack:swamps run function coldsweat_datapack:swamp_drowned
+execute as @e[type=minecraft:drowned,tag=!drowned_done] at @s unless biome ~ ~ ~ #coldsweat_datapack:swamps run tag @s add drowned_done
+
 schedule function coldsweat_datapack:schedule2 0.5s
