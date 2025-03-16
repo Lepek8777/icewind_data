@@ -38,4 +38,7 @@ execute as @a at @s if items entity @s container.* egg run recipe give @s coldsw
 execute as @a at @s if items entity @s container.* egg run recipe give @s coldsweat_datapack:cooked_egg_from_smoking
 execute as @a at @s if items entity @s container.* egg run recipe give @s coldsweat_datapack:cooked_egg_from_campfire_cooking
 
+execute as @a[gamemode=!spectator] at @s if items entity @s player.cursor minecraft:lily_pad run item modify entity @s player.cursor coldsweat_datapack:update_lily_pad
+execute as @a[gamemode=!spectator] at @s if items entity @s weapon.mainhand minecraft:lily_pad run item modify entity @s weapon.mainhand coldsweat_datapack:update_lily_pad
+
 schedule function coldsweat_datapack:schedule2 0.5s
