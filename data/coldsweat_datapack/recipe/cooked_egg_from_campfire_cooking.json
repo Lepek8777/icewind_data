@@ -24,7 +24,8 @@
       "minecraft:rarity": "common",
       "minecraft:max_stack_size": 16,
       "minecraft:custom_data": {
-        "iscooked_egg": "true"
+        "ishot_food": "true",
+        "hot_food_type": "cooked_egg"
       },
       "minecraft:food": {
         "nutrition": 2,
