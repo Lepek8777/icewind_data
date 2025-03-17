@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "misc",
+  "ingredient": "minecraft:powder_snow_bucket",
+  "result": {
+    "id": "minecraft:water_bucket"
+  },
+  "experience": 0,
+  "cookingtime": 110
+}
