@@ -19,13 +19,9 @@ execute as @a[gamemode=spectator] run title @s actionbar ""
 scoreboard players set @a[tag=!start] sc_temp 0
 tag @a[tag=!start] add start
 
-scoreboard players reset @a[scores={sc_death=1..}] sc_temp
-scoreboard players reset @a[scores={sc_death=1..}] sc_waterskin.cold
-scoreboard players reset @a[scores={sc_death=1..}] sc_waterskin.neutral
-scoreboard players reset @a[scores={sc_death=1..}] sc_waterskin.hot
-scoreboard players reset @a[scores={sc_death=1..}] sc_waterskin.total
+execute as @a[scores={sc_death=1..}] at @s run function coldsweat_datapack:zz_private/main_functions/run_after/death
 
-scoreboard players reset @a[scores={sc_death=1..}] sc_death
+
 
 
 execute as @a[gamemode=!spectator] at @s if items entity @s weapon.offhand minecraft:music_disc_11[minecraft:custom_data={hand_fan: "true"}] run item modify entity @s weapon.offhand coldsweat_datapack:lock_hand_fan
