@@ -1,5 +1,7 @@
 #wyswietlanie ikonu w niku gracza
 
+execute unless data storage sc_settings installed run function coldsweat_datapack:zz_private/main_functions/run_after/installing
+
 execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=-310..-240}] run title @s actionbar {"text":"\uE006"}
 execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=-449..-311}] run title @s actionbar {"text":"\uE007"}
 execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=-520..-450}] run title @s actionbar {"text":"\uE008"}
