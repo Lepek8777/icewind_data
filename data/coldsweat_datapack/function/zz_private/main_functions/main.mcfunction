@@ -16,8 +16,9 @@ execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=521..}] run
 execute as @a[gamemode=creative] run title @s actionbar ""
 execute as @a[gamemode=spectator] run title @s actionbar ""
 
-scoreboard players set @a[tag=!start] sc_temp 0
-tag @a[tag=!start] add start
+execute as @a[tag=!start] at @s run function coldsweat_datapack:zz_private/main_functions/run_after/first_join
+
+
 
 execute as @a[scores={sc_death=1..}] at @s run function coldsweat_datapack:zz_private/main_functions/run_after/death
 
