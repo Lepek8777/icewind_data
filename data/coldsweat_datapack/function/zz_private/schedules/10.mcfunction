@@ -44,16 +44,6 @@ execute as @a[gamemode=!spectator,gamemode=!creative] at @s positioned over moti
 
 gamerule doImmediateRespawn true
 
-execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=60..}] if items entity @s armor.* *[minecraft:enchantments={levels:{"minecraft:fire_protection":1}}] if predicate coldsweat_datapack:fire_protection run say f1
-execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=60..}] if items entity @s armor.* *[minecraft:enchantments={levels:{"minecraft:fire_protection":2}}] if predicate coldsweat_datapack:fire_protection run say f2
-execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=60..}] if items entity @s armor.* *[minecraft:enchantments={levels:{"minecraft:fire_protection":3}}] if predicate coldsweat_datapack:fire_protection run say f3
-execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=60..}] if items entity @s armor.* *[minecraft:enchantments={levels:{"minecraft:fire_protection":4}}] if predicate coldsweat_datapack:fire_protection run say f4
-
-
-execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=..-60}] if items entity @s armor.* *[minecraft:enchantments={levels:{"coldsweat_datapack:snow_protection":1}}] if predicate coldsweat_datapack:snow_protection run say s1
-execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=..-60}] if items entity @s armor.* *[minecraft:enchantments={levels:{"coldsweat_datapack:snow_protection":2}}] if predicate coldsweat_datapack:snow_protection run say s2
-execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=..-60}] if items entity @s armor.* *[minecraft:enchantments={levels:{"coldsweat_datapack:snow_protection":3}}] if predicate coldsweat_datapack:snow_protection run say s3
-execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=..-60}] if items entity @s armor.* *[minecraft:enchantments={levels:{"coldsweat_datapack:snow_protection":4}}] if predicate coldsweat_datapack:snow_protection run say s4
 
 
 
