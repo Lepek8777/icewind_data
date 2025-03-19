@@ -29,7 +29,7 @@
       "minecraft:rarity": "common",
       "minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.hand_fan\"}",
       "minecraft:dyed_color": {
-        "rgb": 15720929,
+        "rgb": 16777215,
         "show_in_tooltip": false
       }
     }
