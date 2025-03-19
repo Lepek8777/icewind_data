@@ -1,6 +1,6 @@
 {
-	"pack": {
-		"pack_format": 3,
-		"description": "use 1.21.4"
-	}
+  "pack": {
+    "description": "Coldsweat datapack",
+    "pack_format": 61
+  }
 }
