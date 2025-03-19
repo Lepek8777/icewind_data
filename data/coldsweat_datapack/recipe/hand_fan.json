@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "$#$",
+    "@$@",
+    " @ "
+  ],
+  "key": {
+    "#": "minecraft:feather",
+    "@": "minecraft:stick",
+    "$": "minecraft:paper"
+  },
+  "result": {
+    "id": "minecraft:music_disc_11",
+    "components": {
+      "!minecraft:jukebox_playable": {},
+      "minecraft:consumable": {
+        "consume_seconds": 1000000,
+        "animation": "brush",
+        "has_consume_particles": false
+      },
+      "minecraft:custom_model_data": {
+        "strings": [
+          "hand_fan"
+        ]
+      },
+      "minecraft:custom_data": "{hand_fan: \"true\"}",
+      "minecraft:rarity": "common",
+      "minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.hand_fan\"}",
+      "minecraft:dyed_color": {
+        "rgb": 16777215,
+        "show_in_tooltip": false
+      }
+    }
+  },
+  "show_notification": true
+}
