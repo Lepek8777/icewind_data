@@ -4,7 +4,7 @@
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
-          "items": "#coldsweat:cooked_food"
+          "items": "#coldsweat_datapack:cooked_food"
         }
       }
     }
