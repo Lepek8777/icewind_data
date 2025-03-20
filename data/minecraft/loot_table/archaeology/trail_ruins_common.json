@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:emerald",
+          "name": "minecraft:music_disc_13",
           "weight": 2,
           "functions": [
             {
@@ -200,6 +200,11 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:lead"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 2
         }
       ],
       "rolls": 1
