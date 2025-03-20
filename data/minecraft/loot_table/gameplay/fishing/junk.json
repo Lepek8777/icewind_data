@@ -35,12 +35,9 @@
                       }
                     },
                     {
-                      "condition": "minecraft:entity_properties",
-                      "entity": "this",
+                      "condition": "minecraft:location_check",
                       "predicate": {
-                        "location": {
-                          "biomes": "#coldsweat_datapack:waterskin/cold"
-                        }
+                        "biomes": "#coldsweat_datapack:waterskin/cold"
                       }
                     }
                   ]
@@ -74,12 +71,9 @@
                       }
                     },
                     {
-                      "condition": "minecraft:entity_properties",
-                      "entity": "this",
+                      "condition": "minecraft:location_check",
                       "predicate": {
-                        "location": {
-                          "biomes": "#coldsweat_datapack:waterskin/hot"
-                        }
+                        "biomes": "#coldsweat_datapack:waterskin/hot"
                       }
                     }
                   ]
@@ -112,12 +106,9 @@
                       }
                     },
                     {
-                      "condition": "minecraft:entity_properties",
-                      "entity": "this",
+                      "condition": "minecraft:location_check",
                       "predicate": {
-                        "location": {
-                          "biomes": "#coldsweat_datapack:waterskin/neutral"
-                        }
+                        "biomes": "#coldsweat_datapack:waterskin/neutral"
                       }
                     }
                   ]
