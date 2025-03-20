@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "item_used": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "#coldsweat:cooked_food"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "item_used"
+    ]
+  ],
+  "rewards": {
+    "function": "coldsweat_datapack:zz_private/items/food/effects/hot_food"
+  }
+}
