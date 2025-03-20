@@ -33,12 +33,6 @@
                         "type": "minecraft:constant",
                         "value": 0.7
                       }
-                    },
-                    {
-                      "condition": "minecraft:location_check",
-                      "predicate": {
-                        "biomes": "#coldsweat_datapack:waterskin/cold"
-                      }
                     }
                   ]
                 }
@@ -69,12 +63,6 @@
                         "type": "minecraft:constant",
                         "value": 0.7
                       }
-                    },
-                    {
-                      "condition": "minecraft:location_check",
-                      "predicate": {
-                        "biomes": "#coldsweat_datapack:waterskin/hot"
-                      }
                     }
                   ]
                 }
@@ -103,12 +91,6 @@
                       "chance": {
                         "type": "minecraft:constant",
                         "value": 0.7
-                      }
-                    },
-                    {
-                      "condition": "minecraft:location_check",
-                      "predicate": {
-                        "biomes": "#coldsweat_datapack:waterskin/neutral"
                       }
                     }
                   ]
