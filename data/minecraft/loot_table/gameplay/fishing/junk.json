@@ -158,7 +158,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:equippable": {
-                  "slot": "chest",
+                  "slot": "head",
                   "equip_sound": "minecraft:block.lily_pad.place",
                   "allowed_entities": [
                     "minecraft:player",
