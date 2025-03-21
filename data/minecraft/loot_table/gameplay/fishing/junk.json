@@ -97,8 +97,7 @@
                   "animation": "drink",
                   "has_consume_particles": false
                 },
-                "minecraft:rarity": "common",
-                "minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.waterskin\"}"
+                "minecraft:rarity": "common"
               },
               "conditions": []
             }
