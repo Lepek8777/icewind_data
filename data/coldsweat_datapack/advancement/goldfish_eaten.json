@@ -17,6 +17,7 @@
     "announce_to_chat": true,
     "hidden": true
   },
+  "parent": "minecraft:adventure/adventuring_time",
   "criteria": {
     "item_used": {
       "trigger": "minecraft:consume_item",
