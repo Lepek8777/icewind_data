@@ -18,23 +18,17 @@
                 },
                 "minecraft:custom_model_data": {
                   "strings": [
-                    "waterskin_hot"
+                    "waterskin_cold"
                   ]
                 },
                 "minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.filled_waterskin\"}"
               },
               "conditions": [
                 {
-                  "condition": "minecraft:all_of",
-                  "terms": [
-                    {
-                      "condition": "minecraft:random_chance",
-                      "chance": {
-                        "type": "minecraft:constant",
-                        "value": 0.7
-                      }
-                    }
-                  ]
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biomes": "#coldsweat_datapack:waterskin/cold"
+                  }
                 }
               ]
             },
@@ -55,16 +49,10 @@
               },
               "conditions": [
                 {
-                  "condition": "minecraft:all_of",
-                  "terms": [
-                    {
-                      "condition": "minecraft:random_chance",
-                      "chance": {
-                        "type": "minecraft:constant",
-                        "value": 0.7
-                      }
-                    }
-                  ]
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biomes": "#coldsweat_datapack:waterskin/hot"
+                  }
                 }
               ]
             },
@@ -84,16 +72,10 @@
               },
               "conditions": [
                 {
-                  "condition": "minecraft:all_of",
-                  "terms": [
-                    {
-                      "condition": "minecraft:random_chance",
-                      "chance": {
-                        "type": "minecraft:constant",
-                        "value": 0.7
-                      }
-                    }
-                  ]
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biomes": "#coldsweat_datapack:waterskin/neutral"
+                  }
                 }
               ]
             },
