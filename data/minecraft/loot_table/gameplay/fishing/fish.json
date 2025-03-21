@@ -7,22 +7,94 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:cod",
-          "weight": 60
+          "weight": 60,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:use_remainder": {
+                  "id": "minecraft:bone",
+                  "components": {
+                    "minecraft:custom_model_data": {
+                      "strings": [
+                        "fish_skeleton"
+                      ]
+                    },
+                    "minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.fish_skeleton\"}"
+                  }
+                }
+              }
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:salmon",
-          "weight": 25
+          "weight": 25,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:use_remainder": {
+                  "id": "minecraft:bone",
+                  "components": {
+                    "minecraft:custom_model_data": {
+                      "strings": [
+                        "fish_skeleton"
+                      ]
+                    },
+                    "minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.fish_skeleton\"}"
+                  }
+                }
+              }
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:tropical_fish",
-          "weight": 2
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:use_remainder": {
+                  "id": "minecraft:bone",
+                  "components": {
+                    "minecraft:custom_model_data": {
+                      "strings": [
+                        "fish_skeleton"
+                      ]
+                    },
+                    "minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.fish_skeleton\"}"
+                  }
+                }
+              }
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:pufferfish",
-          "weight": 13
+          "weight": 13,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:use_remainder": {
+                  "id": "minecraft:bone",
+                  "components": {
+                    "minecraft:custom_model_data": {
+                      "strings": [
+                        "fish_skeleton"
+                      ]
+                    },
+                    "minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.fish_skeleton\"}"
+                  }
+                }
+              }
+            }
+          ]
         },
         {
           "type": "minecraft:item",
