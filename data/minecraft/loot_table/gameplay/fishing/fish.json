@@ -278,6 +278,20 @@
               },
               "conditions": []
             }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "offsetX": 0,
+              "offsetY": 0,
+              "offsetZ": 0,
+              "predicate": {
+                "biomes": [
+                  "minecraft:lukewarm_ocean",
+                  "minecraft:deep_lukewarm_ocean"
+                ]
+              }
+            }
           ]
         }
       ],
