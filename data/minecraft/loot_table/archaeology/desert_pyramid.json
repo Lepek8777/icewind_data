@@ -23,7 +23,7 @@
                   ]
                 },
                 "minecraft:custom_data": "{hand_fan: \"true\"}",
-                "minecraft:rarity": "common",
+                "minecraft:rarity": "uncommon",
                 "minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.hand_fan\"}"
               },
               "conditions": []
