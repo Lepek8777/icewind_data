@@ -263,8 +263,20 @@
                   "nutrition": 1,
                   "saturation": 0.5,
                   "can_always_eat": false
+                },
+                "minecraft:use_remainder": {
+                  "id": "minecraft:bone",
+                  "components": {
+                    "minecraft:custom_model_data": {
+                      "strings": [
+                        "fish_skeleton"
+                      ]
+                    },
+                    "minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.fish_skeleton\"}"
+                  }
                 }
-              }
+              },
+              "conditions": []
             }
           ]
         }
