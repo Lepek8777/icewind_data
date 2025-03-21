@@ -7,7 +7,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:cod",
-          "weight": 60,
+          "weight": 300,
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -30,7 +30,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:salmon",
-          "weight": 25,
+          "weight": 125,
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -53,7 +53,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:tropical_fish",
-          "weight": 2,
+          "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -76,7 +76,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:pufferfish",
-          "weight": 13,
+          "weight": 65,
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -99,7 +99,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:music_disc_13",
-          "weight": 40,
+          "weight": 200,
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -141,7 +141,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:music_disc_13",
-          "weight": 35,
+          "weight": 175,
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -194,7 +194,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:bone",
-          "weight": 470,
+          "weight": 2350,
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -217,6 +217,53 @@
               "offsetZ": 0,
               "predicate": {
                 "biomes": "minecraft:pale_garden"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_13",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:jukebox_playable": {},
+                "minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.goldfish\"}",
+                "minecraft:custom_model_data": {
+                  "strings": [
+                    "goldfish"
+                  ]
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 1.1,
+                  "sound": "minecraft:entity.generic.eat",
+                  "has_consume_particles": true,
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:nausea",
+                          "amplifier": 2,
+                          "duration": 600
+                        }
+                      ],
+                      "probability": 100
+                    }
+                  ]
+                },
+                "minecraft:rarity": "epic",
+                "minecraft:max_stack_size": 16,
+                "minecraft:custom_data": {
+                  "isgoldfish": "true"
+                },
+                "minecraft:food": {
+                  "nutrition": 1,
+                  "saturation": 0.5,
+                  "can_always_eat": false
+                }
               }
             }
           ]
