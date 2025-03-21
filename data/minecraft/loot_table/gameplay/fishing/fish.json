@@ -49,7 +49,18 @@
                     "catfish"
                   ]
                 },
-                "minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.catfish\"}"
+                "minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.catfish\"}",
+                "minecraft:use_remainder": {
+                  "id": "minecraft:bone",
+                  "components": {
+                    "minecraft:custom_model_data": {
+                      "strings": [
+                        "fish_skeleton"
+                      ]
+                    },
+                    "minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.fish_skeleton\"}"
+                  }
+                }
               }
             }
           ],
