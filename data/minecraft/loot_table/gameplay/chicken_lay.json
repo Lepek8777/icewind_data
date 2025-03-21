@@ -41,14 +41,18 @@
                   "can_always_eat": false
                 }
               },
-              "conditions": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_nether"
-                  }
-                }
-              ]
+              "conditions": []
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "offsetX": 0,
+              "offsetY": 0,
+              "offsetZ": 0,
+              "predicate": {
+                "dimension": "minecraft:the_nether"
+              }
             }
           ]
         }
