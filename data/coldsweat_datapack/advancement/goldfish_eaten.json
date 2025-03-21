@@ -10,8 +10,12 @@
         }
       }
     },
-    "title": "advancements.coldsweat_datapack.goldfish_eaten.title",
-    "description": "advancements.coldsweat_datapack.goldfish_eaten.description",
+    "title": {
+      "translate": "advancements.coldsweat_datapack.goldfish_eaten.title"
+    },
+    "description": {
+      "translate": "advancements.coldsweat_datapack.goldfish_eaten.description"
+    },
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
