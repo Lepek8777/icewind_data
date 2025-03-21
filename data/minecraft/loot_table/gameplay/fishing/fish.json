@@ -190,6 +190,35 @@
               }
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bone",
+          "weight": 170,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": {
+                  "strings": [
+                    "fish_skeleton"
+                  ]
+                },
+                "minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.fish_skeleton\"}"
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:location_check",
+                  "offsetX": 0,
+                  "offsetY": 0,
+                  "offsetZ": 0,
+                  "predicate": {
+                    "biomes": "minecraft:pale_garden"
+                  }
+                }
+              ]
+            }
+          ]
         }
       ],
       "rolls": 1
