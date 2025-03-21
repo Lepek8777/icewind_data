@@ -254,7 +254,7 @@
                     }
                   ]
                 },
-                "minecraft:rarity": "epic",
+                "minecraft:rarity": "rare",
                 "minecraft:max_stack_size": 16,
                 "minecraft:custom_data": {
                   "isgoldfish": "true"
