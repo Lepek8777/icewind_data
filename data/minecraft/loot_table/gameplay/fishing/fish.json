@@ -194,7 +194,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:bone",
-          "weight": 270,
+          "weight": 470,
           "functions": [
             {
               "function": "minecraft:set_components",
