@@ -7,7 +7,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:music_disc_13",
-          "weight": 18,
+          "weight": 8,
           "functions": [
             {
               "function": "minecraft:set_components",
