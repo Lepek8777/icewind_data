@@ -86,7 +86,7 @@
                   "components": {
                     "minecraft:custom_model_data": {
                       "strings": [
-                        "fish_skeleton"
+                        "fish_skeleton_pufferfish"
                       ]
                     },
                     "minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.fish_skeleton\"}"
