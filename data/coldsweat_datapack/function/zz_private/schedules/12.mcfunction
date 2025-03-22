@@ -15,4 +15,6 @@ execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=..-60}] if 
 
 execute as @a[gamemode=!spectator,gamemode=!creative] at @s if entity @e[type=minecraft:bee,distance=..5] as @e[type=minecraft:bee,distance=..3] at @s run scoreboard players add @r[distance=..3,gamemode=!spectator,gamemode=!creative] sc_temp 1
 
+scoreboard players add @a[gamemode=!spectator] sc_nautilus_shell_cooldown 0
+
 schedule function coldsweat_datapack:zz_private/schedules/12 12s
