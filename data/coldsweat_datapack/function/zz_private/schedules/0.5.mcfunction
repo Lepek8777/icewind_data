@@ -50,9 +50,13 @@ execute as @a[gamemode=!spectator] at @s if items entity @s player.cursor minecr
 execute as @a[gamemode=!spectator] at @s if items entity @s weapon.mainhand minecraft:pufferfish run item modify entity @s weapon.mainhand coldsweat_datapack:update_pufferfish
 execute as @a[gamemode=!spectator] at @s if items entity @s weapon.offhand minecraft:pufferfish run item modify entity @s weapon.offhand coldsweat_datapack:update_pufferfish
 
-execute as @a[gamemode=!spectator] at @s if items entity @s player.cursor minecraft:nautilus_shell run item modify entity @s player.cursor coldsweat_datapack:update_nautilus_shell
-execute as @a[gamemode=!spectator] at @s if items entity @s weapon.mainhand minecraft:nautilus_shell run item modify entity @s weapon.mainhand coldsweat_datapack:update_nautilus_shell
-execute as @a[gamemode=!spectator] at @s if items entity @s weapon.offhand minecraft:nautilus_shell run item modify entity @s weapon.offhand coldsweat_datapack:update_nautilus_shell
+execute as @a[gamemode=!spectator,scores={sc_nautilus_shell_cooldown=0}] at @s if items entity @s player.cursor minecraft:nautilus_shell run item modify entity @s player.cursor coldsweat_datapack:unlock_nautilus_shell
+execute as @a[gamemode=!spectator,scores={sc_nautilus_shell_cooldown=0}] at @s if items entity @s weapon.mainhand minecraft:nautilus_shell run item modify entity @s weapon.mainhand coldsweat_datapack:unlock_nautilus_shell
+execute as @a[gamemode=!spectator,scores={sc_nautilus_shell_cooldown=0}] at @s if items entity @s weapon.offhand minecraft:nautilus_shell run item modify entity @s weapon.offhand coldsweat_datapack:unlock_nautilus_shell
+
+execute as @a[gamemode=!spectator,scores={sc_nautilus_shell_cooldown=1..}] at @s if items entity @s player.cursor minecraft:nautilus_shell run item modify entity @s player.cursor coldsweat_datapack:lock_nautilus_shell
+execute as @a[gamemode=!spectator,scores={sc_nautilus_shell_cooldown=1..}] at @s if items entity @s weapon.mainhand minecraft:nautilus_shell run item modify entity @s weapon.mainhand coldsweat_datapack:lock_nautilus_shell
+execute as @a[gamemode=!spectator,scores={sc_nautilus_shell_cooldown=1..}] at @s if items entity @s weapon.offhand minecraft:nautilus_shell run item modify entity @s weapon.offhand coldsweat_datapack:lock_nautilus_shell
 
 execute as @e[type=minecraft:drowned,tag=!drowned_done] at @s if biome ~ ~ ~ #coldsweat_datapack:swamps run function coldsweat_datapack:zz_private/mob_operations/swamp_drowned
 execute as @e[type=minecraft:drowned,tag=!drowned_done] at @s unless biome ~ ~ ~ #coldsweat_datapack:swamps run tag @s add drowned_done
