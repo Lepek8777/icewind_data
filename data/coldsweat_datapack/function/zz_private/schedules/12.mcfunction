@@ -13,4 +13,6 @@ execute as @a[gamemode=!creative,gamemode=!spectator,x=-9999999,y=280,z=-9999999
 execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=60..}] if predicate coldsweat_datapack:fire_protection run function coldsweat_datapack:zz_private/main_functions/other/enchantments/fire_protection
 execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=..-60}] if predicate coldsweat_datapack:snow_protection run function coldsweat_datapack:zz_private/main_functions/other/enchantments/snow_protection
 
+execute as @a[gamemode=!spectator,gamemode=!creative] at @s if entity @e[type=minecraft:bee,distance=..5] as @e[type=minecraft:bee,distance=..3] at @s run scoreboard players add @r[distance=..3,gamemode=!spectator,gamemode=!creative] sc_temp 1
+
 schedule function coldsweat_datapack:zz_private/schedules/12 12s
