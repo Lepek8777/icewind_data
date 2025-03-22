@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "item_used": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:nautilus_shell",
+          "predicates": {}
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "item_used"
+    ]
+  ],
+  "rewards": {
+    "function": "coldsweat_datapack:zz_private/items/nautilus_shell"
+  }
+}
