@@ -14,3 +14,4 @@ scoreboard objectives add sc_waterskin.cold dummy
 scoreboard objectives add sc_waterskin.neutral dummy
 scoreboard objectives add sc_waterskin.hot dummy
 scoreboard objectives add sc_waterskin.total dummy
+scoreboard objectives add sc_waterskin.item dummy
