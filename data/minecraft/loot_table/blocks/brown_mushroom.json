@@ -25,7 +25,16 @@
                 }
               ]
             }
-          }
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": {
+                "type": "minecraft:constant",
+                "value": 0.3
+              }
+            }
+          ]
         }
       ],
       "conditions": [
