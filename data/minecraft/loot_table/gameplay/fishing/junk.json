@@ -6,127 +6,28 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:music_disc_13",
-          "weight": 8,
+          "name": "minecraft:bone",
+          "weight": 12,
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_data": {
-                  "waterskin": "cold",
-                  "iswaterskin": "true"
-                },
                 "minecraft:custom_model_data": {
                   "strings": [
-                    "waterskin_cold"
-                  ]
-                },
-                "minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.filled_waterskin\"}"
-              },
-              "conditions": [
-                {
-                  "condition": "minecraft:location_check",
-                  "offsetX": 0,
-                  "offsetY": 0,
-                  "offsetZ": 0,
-                  "predicate": {
-                    "biomes": "#coldsweat_datapack:waterskin/cold"
-                  }
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_data": {
-                  "waterskin": "hot",
-                  "iswaterskin": "true"
-                },
-                "minecraft:custom_model_data": {
-                  "strings": [
-                    "waterskin_hot"
+                    "fish_skeleton"
                   ],
                   "colors": []
                 },
-                "minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.filled_waterskin\"}"
-              },
-              "conditions": [
-                {
-                  "condition": "minecraft:location_check",
-                  "offsetX": 0,
-                  "offsetY": 0,
-                  "offsetZ": 0,
-                  "predicate": {
-                    "biomes": "#coldsweat_datapack:waterskin/hot"
-                  }
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_data": {
-                  "waterskin": "neutral",
-                  "iswaterskin": "true"
-                },
-                "minecraft:custom_model_data": {
-                  "strings": [
-                    "filled_waterskin"
-                  ]
-                },
-                "minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.filled_waterskin\"}"
-              },
-              "conditions": [
-                {
-                  "condition": "minecraft:location_check",
-                  "offsetX": 0,
-                  "offsetY": 0,
-                  "offsetZ": 0,
-                  "predicate": {
-                    "biomes": "#coldsweat_datapack:waterskin/neutral"
-                  }
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "!minecraft:jukebox_playable": {},
-                "minecraft:consumable": {
-                  "consume_seconds": 1000000,
-                  "animation": "drink",
-                  "has_consume_particles": false
-                },
-                "minecraft:rarity": "common"
-              },
-              "conditions": []
+                "minecraft:item_name": "{\"translate\":\"item.coldsweat_datapack.fish_skeleton\"}"
+              }
             }
-          ]
+          ],
+          "conditions": []
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:lily_pad",
-          "weight": 17,
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:equippable": {
-                  "slot": "head",
-                  "equip_sound": "minecraft:block.lily_pad.place",
-                  "allowed_entities": [
-                    "minecraft:player",
-                    "minecraft:zombie",
-                    "minecraft:husk",
-                    "minecraft:drowned"
-                  ],
-                  "swappable": false,
-                  "damage_on_hurt": false,
-                  "equip_on_interact": true
-                }
-              }
-            }
-          ]
+          "weight": 17
         },
         {
           "type": "minecraft:item",
