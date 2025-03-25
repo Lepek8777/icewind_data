@@ -1,19 +1,17 @@
 {
-  "type": "minecraft:ruined_portal",
+  "type": "minecraft:jigsaw",
   "biomes": "#minecraft:is_taiga",
   "terrain_adaptation": "beard_box",
-  "setups": [
-    {
-      "air_pocket_probability": 0.5,
-      "can_be_cold": false,
-      "mossiness": 0,
-      "overgrown": false,
-      "placement": "on_land_surface",
-      "replace_with_blackstone": false,
-      "vines": false,
-      "weight": 1
-    }
-  ],
   "spawn_overrides": {},
-  "step": "surface_structures"
+  "step": "surface_structures",
+  "start_pool": "coldsweat_datapack:campfire",
+  "size": 8,
+  "start_height": {
+    "above_bottom": 3
+  },
+  "project_start_to_heightmap": "MOTION_BLOCKING",
+  "max_distance_from_center": 1,
+  "use_expansion_hack": false,
+  "pool_aliases": [],
+  "liquid_settings": "ignore_waterlogging"
 }
