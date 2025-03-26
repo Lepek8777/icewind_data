@@ -1,0 +1,44 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "head": {
+        "predicates": {
+          "minecraft:enchantments": [
+            {
+              "enchantments": "icewind:snow_protection"
+            }
+          ]
+        }
+      },
+      "feet": {
+        "predicates": {
+          "minecraft:enchantments": [
+            {
+              "enchantments": "icewind:snow_protection"
+            }
+          ]
+        }
+      },
+      "legs": {
+        "predicates": {
+          "minecraft:enchantments": [
+            {
+              "enchantments": "icewind:snow_protection"
+            }
+          ]
+        }
+      },
+      "chest": {
+        "predicates": {
+          "minecraft:enchantments": [
+            {
+              "enchantments": "icewind:snow_protection"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

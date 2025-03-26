@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "cooked_food": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "#icewind:cooked_food"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "cooked_food"
+    ]
+  ],
+  "rewards": {
+    "function": "icewind:zz_private/items/food/effects/hot_food",
+    "loot": [],
+    "recipes": []
+  }
+}

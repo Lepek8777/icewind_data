@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "item_used": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:nautilus_shell"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "item_used"
+    ]
+  ],
+  "rewards": {
+    "function": "icewind:zz_private/items/nautilus_shell"
+  }
+}

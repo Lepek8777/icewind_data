@@ -1,0 +1,16 @@
+{
+	"function": "minecraft:set_components",
+	"components": {
+		"minecraft:custom_data": {
+			"waterskin": "cold",
+			"iswaterskin": "true"
+		},
+		"minecraft:custom_model_data": {
+			"strings": [
+				"waterskin_cold"
+			]
+		},
+		"minecraft:item_name": "{\"translate\":\"item.icewind.filled_waterskin\"}"
+	},
+	"conditions": []
+}

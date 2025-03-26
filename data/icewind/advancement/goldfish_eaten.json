@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:music_disc_13",
+      "components": {
+        "minecraft:custom_model_data": {
+          "strings": [
+            "goldfish"
+          ]
+        }
+      }
+    },
+    "title": {
+      "translate": "advancements.icewind.goldfish_eaten.title"
+    },
+    "description": {
+      "translate": "advancements.icewind.goldfish_eaten.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:adventure/adventuring_time",
+  "criteria": {
+    "item_used": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "music_disc_13",
+          "predicates": {
+            "minecraft:custom_data": {
+              "isgoldfish": "true"
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "item_used"
+    ]
+  ]
+}

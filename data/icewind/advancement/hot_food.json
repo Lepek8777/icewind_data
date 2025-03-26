@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "item_used": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "music_disc_13",
+          "predicates": {
+            "minecraft:custom_data": {
+              "ishot_food": "true"
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "item_used"
+    ]
+  ],
+  "rewards": {
+    "function": "icewind:zz_private/items/food/effects/hot_food"
+  }
+}
