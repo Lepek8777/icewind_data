@@ -1,7 +1,7 @@
 item modify entity @s weapon.mainhand icewind:waterskin/pour
 
 particle falling_water ~ ~1.9 ~ 0.3 0 0.3 0 5
-playsound coldsweat_namespace:item.waterskin.pour player @a ~ ~ ~ 0.2 1
+playsound icewind:item.waterskin.pour player @a ~ ~ ~ 0.2 1
 
 scoreboard players remove @s sc_temp 10
 
