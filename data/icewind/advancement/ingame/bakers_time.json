@@ -6,7 +6,15 @@
         "items": [
           {
             "items": "minecraft:bread"
-          },
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "baker2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
           {
             "items": "minecraft:music_disc_13",
             "predicates": {
@@ -16,8 +24,7 @@
             }
           }
         ]
-      },
-      "trigger": "minecraft:inventory_changed"
+      }
     }
   },
   "display": {
@@ -45,6 +52,9 @@
   "requirements": [
     [
       "baker"
+    ],
+    [
+      "baker2"
     ]
   ]
 }
