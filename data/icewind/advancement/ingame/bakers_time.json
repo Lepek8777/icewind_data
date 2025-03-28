@@ -54,5 +54,10 @@
       "baker",
       "baker2"
     ]
-  ]
+  ],
+  "rewards": {
+    "recipes": [
+      "icewind:roll"
+    ]
+  }
 }
