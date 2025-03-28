@@ -27,7 +27,9 @@
       },
       "minecraft:rarity": "common",
       "minecraft:max_stack_size": 32,
-      "minecraft:custom_data": {},
+      "minecraft:custom_data": {
+        "isroll": "true"
+      },
       "minecraft:food": {
         "nutrition": 1,
         "saturation": 2,
