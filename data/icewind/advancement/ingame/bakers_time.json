@@ -5,18 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "minecraft:bread",
-            "predicates": {
-              "minecraft:custom_data": {}
-            }
-          },
-          {
-            "items": "minecraft:music_disc_13",
-            "predicates": {
-              "minecraft:custom_data": {
-                "isroll": "true"
-              }
-            }
+            "items": "minecraft:bread"
           }
         ]
       },
