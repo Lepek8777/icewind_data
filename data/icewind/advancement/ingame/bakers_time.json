@@ -1,0 +1,50 @@
+{
+  "parent": "icewind:ingame/leather_armor",
+  "criteria": {
+    "baker": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:bread"
+          },
+          {
+            "items": "minecraft:music_disc_13",
+            "predicates": {
+              "minecraft:custom_data": {
+                "isroll": "true"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.icewind.bakers_time.description"
+    },
+    "frame": "task",
+    "icon": {
+      "components": {
+        "minecraft:custom_model_data": {
+          "strings": [
+            "roll"
+          ]
+        }
+      },
+      "count": 1,
+      "id": "minecraft:music_disc_13"
+    },
+    "title": {
+      "translate": "advancements.icewind.bakers_time.title"
+    },
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "requirements": [
+    [
+      "baker"
+    ]
+  ]
+}
