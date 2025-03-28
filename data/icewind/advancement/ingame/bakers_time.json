@@ -6,6 +6,14 @@
         "items": [
           {
             "items": "minecraft:bread"
+          },
+          {
+            "items": "minecraft:music_disc_13",
+            "predicates": {
+              "minecraft:custom_data": {
+                "isroll": "true"
+              }
+            }
           }
         ]
       },
