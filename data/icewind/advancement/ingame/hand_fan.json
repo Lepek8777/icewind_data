@@ -27,6 +27,10 @@
             "hand_fan"
           ],
           "colors": []
+        },
+        "minecraft:dyed_color": {
+          "rgb": 16777215,
+          "show_in_tooltip": false
         }
       },
       "count": 1,
