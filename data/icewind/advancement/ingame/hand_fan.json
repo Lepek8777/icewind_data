@@ -1,0 +1,49 @@
+{
+  "parent": "icewind:ingame/root",
+  "criteria": {
+    "hand_fan": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:music_disc_11",
+          "predicates": {
+            "minecraft:custom_data": {
+              "hand_fan": "true"
+            }
+          }
+        }
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.icewind.hand_fan.description"
+    },
+    "frame": "task",
+    "icon": {
+      "components": {
+        "minecraft:custom_model_data": {
+          "strings": [
+            "hand_fan"
+          ],
+          "colors": []
+        }
+      },
+      "count": 1,
+      "id": "minecraft:music_disc_11"
+    },
+    "title": {
+      "translate": "advancements.icewind.hand_fan.title"
+    },
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "requirements": [
+    [
+      "hand_fan"
+    ]
+  ],
+  "rewards": {
+    "recipes": []
+  }
+}
