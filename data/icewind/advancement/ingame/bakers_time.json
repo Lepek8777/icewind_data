@@ -51,9 +51,7 @@
   },
   "requirements": [
     [
-      "baker"
-    ],
-    [
+      "baker",
       "baker2"
     ]
   ]
