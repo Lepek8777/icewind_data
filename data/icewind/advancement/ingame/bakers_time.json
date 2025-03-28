@@ -5,7 +5,10 @@
       "conditions": {
         "items": [
           {
-            "items": "minecraft:bread"
+            "items": "minecraft:bread",
+            "predicates": {
+              "minecraft:custom_data": {}
+            }
           },
           {
             "items": "minecraft:music_disc_13",
