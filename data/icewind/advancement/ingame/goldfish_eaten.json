@@ -21,7 +21,7 @@
     "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "minecraft:adventure/adventuring_time",
+  "parent": "icewind:ingame/root",
   "criteria": {
     "item_used": {
       "trigger": "minecraft:consume_item",
