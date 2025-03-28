@@ -1,0 +1,34 @@
+{
+  "parent": "icewind:ingame/root",
+  "criteria": {
+    "armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#icewind:leather_armor"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.icewind.leather_armor.description"
+    },
+    "frame": "task",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:leather_chestplate"
+    },
+    "title": {
+      "translate": "advancements.icewind.leather_armor.title"
+    },
+    "show_toast": true
+  },
+  "requirements": [
+    [
+      "armor"
+    ]
+  ]
+}
