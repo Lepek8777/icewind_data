@@ -10,12 +10,17 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": {
-                  "strings": [
-                    "fish_skeleton"
-                  ]
-                },
-                "minecraft:item_name": "{\"translate\":\"item.icewind.fish_skeleton\"}"
+                "minecraft:use_remainder": {
+                  "id": "minecraft:bone",
+                  "components": {
+                    "minecraft:custom_model_data": {
+                      "strings": [
+                        "fish_skeleton"
+                      ]
+                    },
+                    "minecraft:item_name": "{\"translate\":\"item.icewind.fish_skeleton\"}"
+                  }
+                }
               }
             },
             {
