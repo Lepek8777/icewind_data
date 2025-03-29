@@ -16,8 +16,8 @@ scoreboard objectives add sc_waterskin.hot dummy
 scoreboard objectives add sc_waterskin.total dummy
 scoreboard objectives add sc_waterskin.item dummy
 
-schedule function icewind:zz_private/mob_operations/raven/animation/0
-schedule function icewind:zz_private/mob_operations/raven/animation/1
-schedule function icewind:zz_private/mob_operations/raven/animation/2
+schedule clear icewind:zz_private/mob_operations/raven/animation/0
+schedule clear icewind:zz_private/mob_operations/raven/animation/1
+schedule clear icewind:zz_private/mob_operations/raven/animation/2
 
 function icewind:zz_private/mob_operations/raven/animation/0
