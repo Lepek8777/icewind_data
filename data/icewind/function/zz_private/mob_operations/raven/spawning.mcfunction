@@ -1,3 +1,3 @@
 say done!
 
-$schedule function icewind:zz_private/mob_operations/raven/spawning $(delay)s
+$schedule function icewind:zz_private/mob_operations/raven/spawning $(delay_done)s
