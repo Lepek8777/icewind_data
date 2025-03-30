@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " P ",
+    "FHF",
+    "AFA"
+  ],
+  "key": {
+    "P": "minecraft:carved_pumpkin",
+    "F": "#minecraft:fences",
+    "A": "minecraft:paper"
+  },
+  "result": {
+    "id": "minecraft:music_disc_13",
+    "components": {
+      "!minecraft:jukebox_playable": {},
+      "minecraft:rarity": "common",
+      "minecraft:max_stack_size": 1,
+      "minecraft:custom_data": {
+        "isscarecrow": "true"
+      },
+      "minecraft:custom_model_data": {
+        "strings": [
+          "scarecrow_item"
+        ]
+      },
+      "minecraft:item_name": "{\"translate\":\"item.icewind.scarecrow\"}"
+    }
+  }
+}
