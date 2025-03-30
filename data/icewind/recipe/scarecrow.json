@@ -9,7 +9,8 @@
   "key": {
     "P": "minecraft:carved_pumpkin",
     "F": "#minecraft:fences",
-    "A": "minecraft:paper"
+    "A": "minecraft:paper",
+    "H": "minecraft:hay_block"
   },
   "result": {
     "id": "minecraft:music_disc_13",
