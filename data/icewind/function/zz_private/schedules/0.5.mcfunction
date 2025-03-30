@@ -33,6 +33,7 @@ execute as @a at @s if items entity @s container.* #icewind:crafting/hand_fan ru
 execute as @a at @s if items entity @s container.* #icewind:crafting/waterskin run recipe give @s icewind:waterskin
 execute as @a at @s if items entity @s container.* #icewind:crafting/sweet_berry_ice_cream run recipe give @s icewind:sweet_berry_ice_cream
 execute as @a at @s if items entity @s container.* #icewind:crafting/melon_ice_cream run recipe give @s icewind:melon_ice_cream
+execute as @a at @s if items entity @s container.* #icewind:crafting/scarecrow run recipe give @s icewind:scarecrow
 
 execute as @a at @s if items entity @s container.* egg run recipe give @s icewind:cooked_egg
 execute as @a at @s if items entity @s container.* egg run recipe give @s icewind:cooked_egg_from_smoking
