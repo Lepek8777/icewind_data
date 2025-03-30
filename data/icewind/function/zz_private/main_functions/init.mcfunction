@@ -21,6 +21,6 @@ schedule clear icewind:zz_private/mob_operations/raven/animation/0
 schedule clear icewind:zz_private/mob_operations/raven/animation/1
 schedule clear icewind:zz_private/mob_operations/raven/animation/2
 schedule clear icewind:zz_private/mob_operations/raven/animation/3
-function icewind:zz_private/mob_operations/raven/spawning
+function icewind:zz_private/mob_operations/raven/random
 
 function icewind:zz_private/mob_operations/raven/animation/0
