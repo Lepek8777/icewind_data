@@ -1,0 +1,21 @@
+{
+  "values": [
+    "minecraft:air",
+    "#minecraft:banners",
+    "#minecraft:candles",
+    "#minecraft:candle_cakes",
+    "#minecraft:beds",
+    "#minecraft:buttons",
+    "#minecraft:pressure_plates",
+    "#minecraft:slabs",
+    "#minecraft:fence_gates",
+    "#minecraft:signs",
+    "minecraft:chain",
+    "#minecraft:all_hanging_signs",
+    "minecraft:water",
+    "minecraft:lava",
+    "minecraft:farmland",
+    "#minecraft:wool_carpets",
+    "#minecraft:climbable"
+  ]
+}
