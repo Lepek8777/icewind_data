@@ -17,6 +17,21 @@
     "minecraft:farmland",
     "#minecraft:wool_carpets",
     "#minecraft:climbable",
-    "#minecraft:leaves"
+    "#minecraft:leaves",
+    "minecraft:short_grass",
+    "minecraft:tall_grass",
+    "minecraft:fern",
+    "#minecraft:flowers",
+    "minecraft:moss_carpet",
+    "minecraft:pale_moss_carpet",
+    "minecraft:large_fern",
+    "minecraft:glow_lichen",
+    "minecraft:hanging_roots",
+    "minecraft:pale_hanging_moss",
+    "minecraft:dead_bush",
+    "#minecraft:flower_pots",
+    "#minecraft:corals",
+    "#minecraft:wall_corals",
+    "#icewind:torches"
   ]
 }
