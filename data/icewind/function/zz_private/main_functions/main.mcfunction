@@ -48,3 +48,5 @@ execute as @a[gamemode=!spectator] at @s unless predicate icewind:is_sneaking if
 #execute as @a[gamemode=!spectator] at @s anchored eyes unless predicate icewind:is_sneaking if items entity @s weapon.mainhand *[minecraft:custom_data={waterskin:"cold",iswaterskin:"true"}] run item modify entity @s weapon.mainhand icewind:waterskin/animation/normal
 #execute as @a[gamemode=!spectator] at @s anchored eyes unless predicate icewind:is_sneaking if items entity @s weapon.mainhand *[minecraft:custom_data={waterskin:"neutral",iswaterskin:"true"}] run item modify entity @s weapon.mainhand icewind:waterskin/animation/normal
 #execute as @a[gamemode=!spectator] at @s anchored eyes unless predicate icewind:is_sneaking if items entity @s weapon.mainhand *[minecraft:custom_data={waterskin:"hot",iswaterskin:"true"}] run item modify entity @s weapon.mainhand icewind:waterskin/animation/normal
+
+execute as @e[type=minecraft:item_display,tag=scarecrow,limit=2,sort=random] at @s unless block ~ ~ ~ minecraft:spruce_fence run function icewind:zz_private/items/scarecrow/destroy
