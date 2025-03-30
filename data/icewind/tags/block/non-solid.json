@@ -16,6 +16,7 @@
     "minecraft:lava",
     "minecraft:farmland",
     "#minecraft:wool_carpets",
-    "#minecraft:climbable"
+    "#minecraft:climbable",
+    "#minecraft:leaves"
   ]
 }
