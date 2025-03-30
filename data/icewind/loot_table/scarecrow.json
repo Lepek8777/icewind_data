@@ -2,14 +2,21 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 0,
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:carved_pumpkin",
-          "weight": 20,
-          "functions": []
-        },
+          "name": "minecraft:carved_pumpkin"
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 3
+      },
+      "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:wheat",
@@ -19,8 +26,8 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 2,
-                "max": 8
+                "min": 1,
+                "max": 3
               }
             }
           ]
@@ -28,14 +35,14 @@
         {
           "type": "minecraft:item",
           "name": "stick",
-          "weight": 20,
+          "weight": 50,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
-                "max": 4
+                "max": 3
               }
             }
           ]
