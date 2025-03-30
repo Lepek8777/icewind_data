@@ -1,6 +1,7 @@
 scoreboard objectives add sc_death deathCount
 scoreboard objectives add sc_temp dummy
 scoreboard objectives add sc_nautilus_shell_cooldown dummy
+scoreboard objectives add sc_scarecrow.rotation dummy
 
 function icewind:zz_private/schedules/0.5
 function icewind:zz_private/schedules/1
