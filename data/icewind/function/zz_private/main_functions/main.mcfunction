@@ -30,6 +30,9 @@ execute as @a[scores={sc_death=1..}] at @s run function icewind:zz_private/main_
 execute as @a[gamemode=!spectator] at @s if items entity @s weapon.offhand minecraft:music_disc_11[minecraft:custom_data={hand_fan: "true"}] run item modify entity @s weapon.offhand icewind:lock_hand_fan
 execute as @a[gamemode=!spectator] at @s if items entity @s weapon.mainhand minecraft:music_disc_11[minecraft:custom_data={hand_fan: "true"},!minecraft:consumable] run item modify entity @s weapon.mainhand icewind:unlock_hand_fan
 
+execute as @a[gamemode=!spectator] at @s if items entity @s weapon.offhand minecraft:music_disc_11[minecraft:custom_data={isscarecrow: "true"}] run item modify entity @s weapon.offhand icewind:lock_scarecrow
+execute as @a[gamemode=!spectator] at @s if items entity @s weapon.mainhand minecraft:music_disc_11[minecraft:custom_data={iscarecrow: "true"},!minecraft:consumable] run item modify entity @s weapon.mainhand icewind:unlock_scarecrow
+
 
 execute as @a[gamemode=!spectator] at @s if predicate icewind:is_sneaking if items entity @s weapon.mainhand minecraft:music_disc_13[minecraft:custom_data={iswaterskin: "true",waterskin: "cold"}] run item modify entity @s weapon.mainhand icewind:waterskin/animation/pouring
 execute as @a[gamemode=!spectator] at @s if predicate icewind:is_sneaking if items entity @s weapon.mainhand minecraft:music_disc_13[minecraft:custom_data={iswaterskin: "true",waterskin: "neutral"}] run item modify entity @s weapon.mainhand icewind:waterskin/animation/pouring
