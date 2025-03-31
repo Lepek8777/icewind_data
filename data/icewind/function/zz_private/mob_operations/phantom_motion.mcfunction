@@ -1,4 +1,4 @@
-execute store result score %r sc_scarecrow.phantom run random value 1..4
+#execute store result score %r sc_scarecrow.phantom run random value 1..4
 
 data merge entity @s {AY:20,TickFrozen:40}
 
