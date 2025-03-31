@@ -51,7 +51,7 @@ execute as @a[gamemode=!spectator] at @s unless predicate icewind:is_sneaking if
 
 execute as @e[type=minecraft:item_display,tag=scarecrow,limit=4,sort=random] at @s unless block ~ ~ ~ minecraft:spruce_fence run function icewind:zz_private/items/scarecrow/destroy
 
-execute as @e[type=minecraft:item_display,tag=scarecrow,limit=8,sort=random] at @s if entity @e[type=minecraft:phantom,distance=..14] as @e[type=minecraft:phantom,distance=..14,limit=1,sort=nearest] at @s run data modify entity @s Motion[1] set value 0.2
+execute as @e[type=minecraft:item_display,tag=scarecrow,limit=8,sort=random] at @s if entity @e[type=minecraft:phantom,distance=..14] as @e[type=minecraft:phantom,distance=..14,limit=1,sort=nearest] at @s run data modify entity @s Motion[1] set value 0.2d
 
 #execute as @e[type=minecraft:item_display,tag=scarecrow,limit=8,sort=random] at @s if entity @e[type=minecraft:phantom,distance=..14] as @e[type=minecraft:phantom,distance=..14,limit=1,sort=nearest] at @s facing entity @e[type=minecraft:item_display,tag=scarecrow,limit=1,sort=nearest] eyes anchored eyes run tp @s ^ ^ ^-0.5
 #execute as @e[type=minecraft:item_display,tag=scarecrow,limit=8,sort=random] at @s if entity @e[type=minecraft:phantom,distance=..12.5] as @e[type=minecraft:phantom,distance=..12.5,limit=1,sort=nearest] at @s facing entity @e[type=minecraft:item_display,tag=scarecrow,limit=1,sort=nearest] eyes anchored eyes run tp @s ^ ^ ^-0.8
