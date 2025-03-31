@@ -2,7 +2,6 @@
 
 data merge entity @s {AY:20,TickFrozen:40}
 
-say s
 #execute if score %r sc_scarecrow.phantom matches 1 run data modify entity @s Motion[1] set value 0.1
 #execute if score %r sc_scarecrow.phantom matches 2 run data modify entity @s Motion[1] set value 0.2
 #execute if score %r sc_scarecrow.phantom matches 3 run data modify entity @s Motion[1] set value 0.3
