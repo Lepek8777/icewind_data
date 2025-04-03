@@ -1,0 +1,100 @@
+{
+    "exclusive_set": "#icewind:exclusive_set/sword",
+    "anvil_cost": 4,
+    "description": {
+      "translate": "enchantment.icewind.snow_aspect"
+    },
+    "effects": {
+      "minecraft:post_attack": [
+        {
+          "affected": "victim",
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "icewind:zz_private/main_functions/other/enchantments/snow_aspect/1"
+          },
+          "enchanted": "attacker",
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:damage_source_properties",
+                "predicate": {
+                  "is_direct": true
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "slots": {
+                    "weapon.mainhand": {
+                      "predicates": {
+                        "minecraft:enchantments": [
+                          {
+                            "enchantments": "icewind:snow_aspect",
+                            "levels": 1
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:damage_source_properties",
+                "predicate": {
+                  "is_direct": true
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "slots": {
+                    "weapon.mainhand": {
+                      "predicates": {
+                        "minecraft:enchantments": [
+                          {
+                            "enchantments": "icewind:snow_aspect",
+                            "levels": 2
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "icewind:zz_private/main_functions/other/enchantments/snow_aspect/2"
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        }
+      ]
+    },
+    "max_cost": {
+      "base": 60,
+      "per_level_above_first": 20
+    },
+    "max_level": 2,
+    "min_cost": {
+      "base": 10,
+      "per_level_above_first": 20
+    },
+    "primary_items": "#minecraft:enchantable/sword",
+    "slots": [
+      "mainhand"
+    ],
+    "supported_items": "#minecraft:enchantable/fire_aspect",
+    "weight": 2
+  }

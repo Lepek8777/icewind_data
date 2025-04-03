@@ -35,6 +35,7 @@
 		"minecraft:piercing",
 		"minecraft:density",
 		"minecraft:breach",
-		"icewind:snow_protection"
+		"icewind:snow_protection",
+		"icewind:snow_aspect"
 	]
 }
