@@ -293,6 +293,205 @@
               }
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_13",
+          "weight": 150,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:jukebox_playable": {},
+                "minecraft:consumable": {
+                  "consume_seconds": 1.5,
+                  "sound": "minecraft:entity.generic.eat"
+                },
+                "minecraft:rarity": "common",
+                "minecraft:max_stack_size": 64,
+                "minecraft:food": {
+                  "nutrition": 1,
+                  "saturation": 1.5
+                },
+                "minecraft:custom_model_data": {
+                  "strings": [
+                    "poecilia_latipinna"
+                  ]
+                },
+                "minecraft:item_name": "{\"translate\":\"item.icewind.poecilia_latipinna\"}",
+                "minecraft:use_remainder": {
+                  "id": "minecraft:bone",
+                  "components": {
+                    "minecraft:custom_model_data": {
+                      "strings": [
+                        "fish_skeleton"
+                      ]
+                    },
+                    "minecraft:item_name": "{\"translate\":\"item.icewind.fish_skeleton\"}"
+                  }
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "offsetX": 0,
+              "offsetY": 0,
+              "offsetZ": 0,
+              "predicate": {
+                "biomes": [
+                  "minecraft:deep_lukewarm_ocean",
+                  "minecraft:lukewarm_ocean",
+                  "minecraft:warm_ocean"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_13",
+          "weight": 280,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:jukebox_playable": {},
+                "minecraft:consumable": {
+                  "consume_seconds": 1.5
+                },
+                "minecraft:rarity": "common",
+                "minecraft:max_stack_size": 64,
+                "minecraft:food": {
+                  "nutrition": 1,
+                  "saturation": 0.5
+                },
+                "minecraft:custom_model_data": {
+                  "strings": [
+                    "scalar"
+                  ]
+                },
+                "minecraft:item_name": "{\"translate\":\"item.icewind.scalar\"}",
+                "minecraft:use_remainder": {
+                  "id": "bone",
+                  "components": {
+                    "minecraft:custom_model_data": {
+                      "strings": [
+                        "fish_skeleton"
+                      ]
+                    },
+                    "minecraft:item_name": "{\"translate\":\"item.icewind.fish_skeleton\"}"
+                  }
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "offsetX": 0,
+              "offsetY": 0,
+              "offsetZ": 0,
+              "predicate": {
+                "biomes": [
+                  "minecraft:deep_lukewarm_ocean",
+                  "minecraft:lukewarm_ocean",
+                  "minecraft:warm_ocean"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_13",
+          "weight": 120,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:jukebox_playable": {},
+                "minecraft:consumable": {
+                  "consume_seconds": 1.5,
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:nausea",
+                          "amplifier": 0,
+                          "duration": 90,
+                          "ambient": false,
+                          "show_particles": false,
+                          "show_icon": false
+                        }
+                      ],
+                      "probability": 0.9
+                    },
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:nausea",
+                          "amplifier": 0,
+                          "duration": 120,
+                          "ambient": false,
+                          "show_particles": false,
+                          "show_icon": false
+                        }
+                      ],
+                      "probability": 0.7
+                    }
+                  ]
+                },
+                "minecraft:rarity": "common",
+                "minecraft:max_stack_size": 64,
+                "minecraft:food": {
+                  "nutrition": 2,
+                  "saturation": 2.5
+                },
+                "minecraft:custom_model_data": {
+                  "strings": [
+                    "bluefin_notho"
+                  ]
+                },
+                "minecraft:item_name": "{\"translate\":\"item.icewind.bluefin_notho\"}",
+                "minecraft:use_remainder": {
+                  "id": "minecraft:bone",
+                  "components": {
+                    "minecraft:custom_model_data": {
+                      "strings": [
+                        "fish_skeleton"
+                      ]
+                    },
+                    "minecraft:item_name": "{\"translate\":\"item.icewind.fish_skeleton\"}"
+                  }
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "offsetX": 0,
+              "offsetY": 0,
+              "offsetZ": 0,
+              "predicate": {
+                "biomes": [
+                  "minecraft:sparse_jungle",
+                  "minecraft:mushroom_fields",
+                  "minecraft:bamboo_jungle",
+                  "minecraft:jungle",
+                  "minecraft:warm_ocean",
+                  "minecraft:windswept_savanna",
+                  "minecraft:savanna",
+                  "minecraft:savanna_plateau",
+                  "minecraft:badlands"
+                ]
+              }
+            }
+          ]
         }
       ],
       "rolls": 1
