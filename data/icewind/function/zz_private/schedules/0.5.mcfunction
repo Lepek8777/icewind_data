@@ -35,6 +35,7 @@ execute as @a at @s if items entity @s container.* #icewind:crafting/sweet_berry
 execute as @a at @s if items entity @s container.* #icewind:crafting/melon_ice_cream run recipe give @s icewind:melon_ice_cream
 execute as @a at @s if items entity @s container.* #icewind:crafting/scarecrow run recipe give @s icewind:scarecrow
 execute as @a at @s if items entity @s container.* #icewind:crafting/pumpkin_soup run recipe give @s icewind:pumpkin_soup
+execute as @a at @s if items entity @s container.* #minecraft:wool run recipe give @s icewind:string
 
 execute as @a at @s if items entity @s container.* egg run recipe give @s icewind:cooked_egg
 execute as @a at @s if items entity @s container.* egg run recipe give @s icewind:cooked_egg_from_smoking
