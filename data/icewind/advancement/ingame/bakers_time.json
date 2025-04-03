@@ -3,25 +3,22 @@
   "criteria": {
     "baker": {
       "conditions": {
-        "items": [
+        "recipe_id": "minecraft:bread",
+        "ingredients": [
           {
-            "items": "minecraft:bread"
+            "items": "minecraft:wheat"
           }
         ]
       },
-      "trigger": "minecraft:inventory_changed"
+      "trigger": "minecraft:recipe_crafted"
     },
     "baker2": {
-      "trigger": "minecraft:inventory_changed",
+      "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "items": [
+        "recipe_id": "icewind:roll",
+        "ingredients": [
           {
-            "items": "minecraft:music_disc_13",
-            "predicates": {
-              "minecraft:custom_data": {
-                "isroll": "true"
-              }
-            }
+            "items": "minecraft:wheat"
           }
         ]
       }
