@@ -134,6 +134,21 @@
           ],
           "name": "minecraft:bamboo",
           "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wooden_hoe",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 0.9
+              }
+            }
+          ]
         }
       ],
       "rolls": 1
