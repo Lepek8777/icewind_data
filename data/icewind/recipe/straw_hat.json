@@ -1,0 +1,38 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+      " W ",
+      "WLW",
+      " H "
+    ],
+    "key": {
+      "W": "minecraft:wheat",
+      "L": "minecraft:lead",
+      "H": "minecraft:leather_helmet"
+    },
+    "result": {
+      "id": "minecraft:music_disc_13",
+      "components": {
+        "!minecraft:jukebox_playable": {},
+        "minecraft:custom_model_data": {
+          "strings": [
+            "straw_hat"
+          ]
+        },
+        "minecraft:custom_data": {
+          "isstraw_hat": "true"
+        },
+        "minecraft:equippable": {
+          "slot": "head",
+          "equip_sound": "minecraft:block.grass.place",
+          "dispensable": true,
+          "swappable": true,
+          "damage_on_hurt": false,
+          "equip_on_interact": false
+        },
+        "minecraft:item_name": "{\"translate\":\"item.icewind.straw_hat\"}",
+        "minecraft:rarity": "common"
+      }
+    }
+  }

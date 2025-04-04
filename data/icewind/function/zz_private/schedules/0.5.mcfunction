@@ -35,6 +35,7 @@ execute as @a at @s if items entity @s container.* #icewind:crafting/sweet_berry
 execute as @a at @s if items entity @s container.* #icewind:crafting/melon_ice_cream run recipe give @s icewind:melon_ice_cream
 execute as @a at @s if items entity @s container.* #icewind:crafting/scarecrow run recipe give @s icewind:scarecrow
 execute as @a at @s if items entity @s container.* #icewind:crafting/pumpkin_soup run recipe give @s icewind:pumpkin_soup
+execute as @a at @s if items entity @s container.* #icewind:crafting/straw_hat run recipe give @s icewind:straw_hat
 
 execute as @a at @s if items entity @s container.* egg run recipe give @s icewind:cooked_egg
 execute as @a at @s if items entity @s container.* egg run recipe give @s icewind:cooked_egg_from_smoking
@@ -62,5 +63,7 @@ execute as @a[gamemode=!spectator,scores={sc_nautilus_shell_cooldown=1..}] at @s
 
 execute as @e[type=minecraft:drowned,tag=!drowned_done] at @s if biome ~ ~ ~ #icewind:swamps run function icewind:zz_private/mob_operations/swamp_drowned
 execute as @e[type=minecraft:drowned,tag=!drowned_done] at @s unless biome ~ ~ ~ #icewind:swamps run tag @s add drowned_done
+
+execute as @a[gamemode=!spectator,gamemode=!creative] at @s as @e[predicate=icewind:farmer,distance=..35,limit=5,sort=random] run data modify entity @s DeathLootTable set value "icewind:entities/farmer"
 
 schedule function icewind:zz_private/schedules/0.5 0.5s

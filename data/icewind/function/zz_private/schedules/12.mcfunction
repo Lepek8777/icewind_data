@@ -17,4 +17,6 @@ execute as @a[gamemode=!spectator,gamemode=!creative] at @s if entity @e[type=mi
 
 scoreboard players add @a[gamemode=!spectator] sc_nautilus_shell_cooldown 0
 
+execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=..0}] at @s if items entity @s armor.head minecraft:music_disc_13[minecraft:custom_data={isstraw_hat: "true"}] run scoreboard players add @s sc_temp 1
+
 schedule function icewind:zz_private/schedules/12 12s

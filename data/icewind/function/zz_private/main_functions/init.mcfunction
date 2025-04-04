@@ -11,6 +11,7 @@ function icewind:zz_private/schedules/1
 function icewind:zz_private/schedules/10
 function icewind:zz_private/schedules/12
 function icewind:zz_private/schedules/5
+function icewind:zz_private/schedules/20
 
 scoreboard objectives add sc_hand_fan dummy
 

@@ -1,6 +1,8 @@
 execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=..0}] at @s if items entity @s armor.head #icewind:non_leather_armor/helmet run scoreboard players add @s sc_temp 1
 execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=0..}] at @s if items entity @s armor.head #icewind:non_leather_armor/helmet run scoreboard players remove @s sc_temp 1
 
+execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=0..}] at @s if items entity @s armor.head minecraft:music_disc_13[minecraft:custom_data={isstraw_hat: "true"}] run scoreboard players remove @s sc_temp 4
+
 execute as @a[gamemode=!spectator,gamemode=!creative] at @s if items entity @s armor.chest #icewind:non_leather_armor/chestplate run scoreboard players add @s sc_temp 3
 execute as @a[gamemode=!spectator,gamemode=!creative] at @s if items entity @s armor.legs #icewind:non_leather_armor/leggings run scoreboard players add @s sc_temp 2
 execute as @a[gamemode=!spectator,gamemode=!creative] at @s if items entity @s armor.feet #icewind:non_leather_armor/boots run scoreboard players add @s sc_temp 1

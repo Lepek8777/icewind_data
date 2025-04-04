@@ -1,0 +1,1 @@
+{"type":"minecraft:entity","pools":[{"rolls":1,"entries":[{"type":"minecraft:loot_table","value":"icewind:straw_hat","conditions":[{"condition":"minecraft:random_chance","chance":0.2}]}],"conditions":[]}],"random_sequence":"icewind:entities/villlager/farmer"}
