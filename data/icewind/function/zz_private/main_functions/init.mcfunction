@@ -1,3 +1,5 @@
+#karol was here
+
 scoreboard objectives add sc_death deathCount
 scoreboard objectives add sc_temp dummy
 scoreboard objectives add sc_nautilus_shell_cooldown dummy
