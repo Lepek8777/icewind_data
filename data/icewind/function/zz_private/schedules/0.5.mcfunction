@@ -66,6 +66,7 @@ execute as @e[type=minecraft:drowned,tag=!drowned_done] at @s if biome ~ ~ ~ #ic
 execute as @e[type=minecraft:drowned,tag=!drowned_done] at @s unless biome ~ ~ ~ #icewind:swamps run tag @s add drowned_done
 
 execute as @a[gamemode=!spectator] at @s as @e[predicate=icewind:farmer,distance=..35,limit=5,sort=random] run data modify entity @s DeathLootTable set value "icewind:entities/farmer"
+scoreboard players reset @e[scores={sc_enchantments.snow_aspect=..0}] sc_enchantments.snow_aspect
 
 
 schedule function icewind:zz_private/schedules/0.5 0.5s

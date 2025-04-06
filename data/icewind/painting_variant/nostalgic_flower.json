@@ -1,0 +1,13 @@
+{
+    "asset_id": "icewind:nostalgic_flower",
+    "author": {
+        "text": "Karol880",
+        "color": "gray"
+    },
+    "height": 4,
+    "title": {
+        "color": "yellow",
+        "translate": "painting.icewind.nostalgic_flower.title"
+    },
+    "width": 4
+}

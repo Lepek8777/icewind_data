@@ -1,5 +1,6 @@
 scoreboard objectives add sc_death deathCount
 scoreboard objectives add sc_temp dummy
+scoreboard objectives add sc_enchantments.snow_aspect dummy
 scoreboard objectives add sc_nautilus_shell_cooldown dummy
 scoreboard objectives add sc_scarecrow.rotation dummy
 scoreboard objectives add sc_scarecrow.phantom dummy
