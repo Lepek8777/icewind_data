@@ -1,19 +1,18 @@
-#wyswietlanie ikonu w niku gracza
 #,"shadow_color":16711680
 
+#initilization
+
 execute unless data storage sc_settings installed run function icewind:zz_private/main_functions/run_after/installing
-
-execute if data storage minecraft:sc_settings settings.show_indicator run function icewind:zz_private/main_functions/settings/actions/show_indicator
-
-execute if data storage minecraft:sc_settings settings.temperature_difficulty.off run function icewind:zz_private/main_functions/settings/actions/temperature_difficulty/off
-
 execute as @a[tag=!start] at @s run function icewind:zz_private/main_functions/run_after/first_join
-
-
-
 execute as @a[scores={sc_death=1..}] at @s run function icewind:zz_private/main_functions/run_after/death
 
+#settings
 
+execute if data storage minecraft:sc_settings settings.show_indicator run function icewind:zz_private/main_functions/settings/actions/show_indicator
+execute if data storage minecraft:sc_settings settings.temperature_difficulty.off run function icewind:zz_private/main_functions/settings/actions/temperature_difficulty/off
+
+
+###
 
 
 execute as @a[gamemode=!spectator] at @s if items entity @s weapon.offhand minecraft:music_disc_11[minecraft:custom_data={hand_fan: "true"}] run item modify entity @s weapon.offhand icewind:lock_hand_fan
