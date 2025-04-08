@@ -134,4 +134,8 @@ execute as @a[gamemode=!spectator,scores={sc_waterskin.total=115..}] run damage 
 
 execute as @a[gamemode=!spectator] run scoreboard players reset @s sc_waterskin.total
 
+
+execute if data storage minecraft:sc_settings settings.temperature_difficulty.easy run function icewind:zz_private/main_functions/settings/actions/temperature_difficulty/easy
+execute if data storage minecraft:sc_settings settings.temperature_difficulty.hard run function icewind:zz_private/main_functions/settings/actions/temperature_difficulty/hard
+
 schedule function icewind:zz_private/schedules/5 5s

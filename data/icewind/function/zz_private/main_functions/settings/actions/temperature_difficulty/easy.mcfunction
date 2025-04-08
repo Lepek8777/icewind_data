@@ -1,0 +1,2 @@
+execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=..0}] run scoreboard players add @s sc_temp 2
+execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=0..}] run scoreboard players remove @s sc_temp 2

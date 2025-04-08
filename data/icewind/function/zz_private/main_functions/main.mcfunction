@@ -3,21 +3,9 @@
 
 execute unless data storage sc_settings installed run function icewind:zz_private/main_functions/run_after/installing
 
-execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=-310..-240}] run title @s actionbar {"translate":"gui.icewind.indicator.6","fallback":"Texturepack is missing :<","shadow_color":16711680}
-execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=-449..-311}] run title @s actionbar {"translate":"gui.icewind.indicator.7","fallback":"Texturepack is missing :<","shadow_color":16711680}
-execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=-520..-450}] run title @s actionbar {"translate":"gui.icewind.indicator.8","fallback":"Texturepack is missing :<","shadow_color":16711680}
-execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=..-521}] run title @s actionbar {"translate":"gui.icewind.indicator.9","fallback":"Texturepack is missing :<","shadow_color":16711680}
+execute if data storage minecraft:sc_settings settings.show_indicator run function icewind:zz_private/main_functions/settings/actions/show_indicator
 
-execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=-239..239}] run title @s actionbar {"translate":"gui.icewind.indicator.5","fallback":"Texturepack is missing :<","shadow_color":16711680}
-
-execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=240..310}] run title @s actionbar {"translate":"gui.icewind.indicator.4","fallback":"Texturepack is missing :<","shadow_color":16711680}
-execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=311..449}] run title @s actionbar {"translate":"gui.icewind.indicator.3","fallback":"Texturepack is missing :<","shadow_color":16711680}
-execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=450..520}] run title @s actionbar {"translate":"gui.icewind.indicator.2","fallback":"Texturepack is missing :<","shadow_color":16711680}
-execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=521..}] run title @s actionbar {"translate":"gui.icewind.indicator.1","fallback":"Texturepack is missing :<","shadow_color":16711680}
-
-
-execute as @a[gamemode=creative] run title @s actionbar ""
-execute as @a[gamemode=spectator] run title @s actionbar ""
+execute if data storage minecraft:sc_settings settings.temperature_difficulty.off run function icewind:zz_private/main_functions/settings/actions/temperature_difficulty/off
 
 execute as @a[tag=!start] at @s run function icewind:zz_private/main_functions/run_after/first_join
 
