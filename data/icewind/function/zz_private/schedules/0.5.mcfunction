@@ -39,6 +39,13 @@ execute as @a at @s if items entity @s container.* #icewind:crafting/straw_hat r
 execute as @a at @s if items entity @s container.* #icewind:crafting/fishing_rod run recipe give @s icewind:fishing_rod
 execute as @a at @s if items entity @s container.* #icewind:crafting/sweet_berry_pie run recipe give @s icewind:sweet_berry_pie
 
+execute as @a at @s if items entity @s container.* #icewind:crafting/tomahawk/wooden run recipe give @s icewind:tomahawk/wooden_tomahawk
+execute as @a at @s if items entity @s container.* #icewind:crafting/tomahawk/stone run recipe give @s icewind:tomahawk/stone_tomahawk
+execute as @a at @s if items entity @s container.* #icewind:crafting/tomahawk/iron run recipe give @s icewind:tomahawk/iron_tomahawk
+execute as @a at @s if items entity @s container.* #icewind:crafting/tomahawk/diamond run recipe give @s icewind:tomahawk/wooden_tomahawk
+execute as @a at @s if items entity @s container.* #icewind:crafting/tomahawk/netherite run recipe give @s icewind:tomahawk/netherite_tomahawk
+execute as @a at @s if items entity @s container.* #icewind:crafting/tomahawk/golden run recipe give @s icewind:tomahawk/golden_tomahawk
+
 execute as @a at @s if items entity @s container.* egg run recipe give @s icewind:cooked_egg
 execute as @a at @s if items entity @s container.* egg run recipe give @s icewind:cooked_egg_from_smoking
 execute as @a at @s if items entity @s container.* egg run recipe give @s icewind:cooked_egg_from_campfire_cooking
