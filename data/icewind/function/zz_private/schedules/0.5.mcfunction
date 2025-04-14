@@ -43,17 +43,17 @@ execute as @a at @s if items entity @s container.* egg run recipe give @s icewin
 execute as @a at @s if items entity @s container.* egg run recipe give @s icewind:cooked_egg_from_smoking
 execute as @a at @s if items entity @s container.* egg run recipe give @s icewind:cooked_egg_from_campfire_cooking
 
-execute as @a[gamemode=!spectator] at @s if items entity @s player.cursor minecraft:lily_pad run item modify entity @s player.cursor icewind:update_lily_pad
-execute as @a[gamemode=!spectator] at @s if items entity @s weapon.mainhand minecraft:lily_pad run item modify entity @s weapon.mainhand icewind:update_lily_pad
-execute as @a[gamemode=!spectator] at @s if items entity @s weapon.offhand minecraft:lily_pad run item modify entity @s weapon.offhand icewind:update_lily_pad
+execute as @a[gamemode=!spectator] at @s if items entity @s player.cursor minecraft:lily_pad run item modify entity @s player.cursor icewind:update/lily_pad
+execute as @a[gamemode=!spectator] at @s if items entity @s weapon.mainhand minecraft:lily_pad run item modify entity @s weapon.mainhand icewind:update/lily_pad
+execute as @a[gamemode=!spectator] at @s if items entity @s weapon.offhand minecraft:lily_pad run item modify entity @s weapon.offhand icewind:update/lily_pad
 
-execute as @a[gamemode=!spectator] at @s if items entity @s player.cursor #icewind:fish run item modify entity @s player.cursor icewind:update_fish
-execute as @a[gamemode=!spectator] at @s if items entity @s weapon.mainhand #icewind:fish run item modify entity @s weapon.mainhand icewind:update_fish
-execute as @a[gamemode=!spectator] at @s if items entity @s weapon.offhand #icewind:fish run item modify entity @s weapon.offhand icewind:update_fish
+execute as @a[gamemode=!spectator] at @s if items entity @s player.cursor #icewind:fish run item modify entity @s player.cursor icewind:update/fish
+execute as @a[gamemode=!spectator] at @s if items entity @s weapon.mainhand #icewind:fish run item modify entity @s weapon.mainhand icewind:update/fish
+execute as @a[gamemode=!spectator] at @s if items entity @s weapon.offhand #icewind:fish run item modify entity @s weapon.offhand icewind:update/fish
 
-execute as @a[gamemode=!spectator] at @s if items entity @s player.cursor minecraft:pufferfish run item modify entity @s player.cursor icewind:update_pufferfish
-execute as @a[gamemode=!spectator] at @s if items entity @s weapon.mainhand minecraft:pufferfish run item modify entity @s weapon.mainhand icewind:update_pufferfish
-execute as @a[gamemode=!spectator] at @s if items entity @s weapon.offhand minecraft:pufferfish run item modify entity @s weapon.offhand icewind:update_pufferfish
+execute as @a[gamemode=!spectator] at @s if items entity @s player.cursor minecraft:pufferfish run item modify entity @s player.cursor icewind:update/pufferfish
+execute as @a[gamemode=!spectator] at @s if items entity @s weapon.mainhand minecraft:pufferfish run item modify entity @s weapon.mainhand icewind:update/pufferfish
+execute as @a[gamemode=!spectator] at @s if items entity @s weapon.offhand minecraft:pufferfish run item modify entity @s weapon.offhand icewind:update/pufferfish
 
 execute as @a[gamemode=!spectator,scores={sc_nautilus_shell_cooldown=0}] at @s if items entity @s player.cursor minecraft:nautilus_shell run item modify entity @s player.cursor icewind:unlock_nautilus_shell
 execute as @a[gamemode=!spectator,scores={sc_nautilus_shell_cooldown=0}] at @s if items entity @s weapon.mainhand minecraft:nautilus_shell run item modify entity @s weapon.mainhand icewind:unlock_nautilus_shell
