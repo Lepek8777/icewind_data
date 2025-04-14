@@ -16,7 +16,7 @@ execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~-0.1 ~ #
 execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~-0.1 ~ #icewind:2 run scoreboard players add @s sc_temp 2
 execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~-0.1 ~ #icewind:1 run scoreboard players remove @s sc_temp 1
 execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~-0.1 ~ #icewind:0 run scoreboard players remove @s sc_temp 4
-execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~ ~ #minecraft:snow run scoreboard players remove @s sc_temp 1
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~ ~ #minecraft:snow run scoreboard players remove @s sc_temp 3
 execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~ ~ #minecraft:wool_carpets run scoreboard players add @s sc_temp 4
 
 execute as @a[gamemode=!spectator,gamemode=!creative] at @s positioned over motion_blocking_no_leaves if entity @s[dy=9999] if predicate icewind:rain_detection unless items entity @s armor.head #icewind:non_leather_armor/helmet run scoreboard players remove @s sc_temp 4

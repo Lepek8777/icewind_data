@@ -1,5 +1,6 @@
 gamerule sendCommandFeedback false
-playsound minecraft:block.note_block.iron_xylophone block @s ~ ~ ~
+playsound minecraft:ui.loom.select_pattern master @s ~ ~ ~ 0.5
+playsound minecraft:block.note_block.hat master @s ~ ~ ~
 tellraw @s {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n   ","extra":[{"translate":"gui.icewind.settings.settings","fallback":"Texturepack is missing :<","color":"#699eb5"},{"text":" - ","color":"dark_gray"},{"text":"Icewind","color":"gray"},"\n\n"]}
 
 
