@@ -47,7 +47,7 @@
 					"type": "minecraft:tag",
 					"expand": true,
 					"name": "minecraft:creeper_drop_music_discs",
-					"weight": 11
+					"weight": 10
 				},
 				{
 					"type": "minecraft:item",
@@ -61,6 +61,22 @@
 									"song": "minecraft:strad"
 								},
 								"minecraft:item_model": "minecraft:music_disc_strad"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:music_disc_13",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:jukebox_playable": {
+									"song": "minecraft:mellohi"
+								},
+								"minecraft:item_model": "minecraft:music_disc_mellohi"
 							}
 						}
 					]

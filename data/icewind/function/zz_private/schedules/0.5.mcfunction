@@ -28,6 +28,13 @@ execute as @a[gamemode=!creative,gamemode=!spectator,x=-9999999,y=480,z=-9999999
 execute as @a[gamemode=!spectator,gamemode=!creative] at @s if biome ~ ~ ~ #icewind:0 if block ~ ~ ~ water run scoreboard players remove @s sc_temp 5
 execute as @a[gamemode=!spectator,gamemode=!creative] at @s if biome ~ ~ ~ #icewind:1 if block ~ ~ ~ water run scoreboard players remove @s sc_temp 2
 
+execute as @a[gamemode=!spectator] at @s if items entity @s weapon.mainhand minecraft:music_disc_strad unless items entity @s weapon.mainhand *[minecraft:custom_data={istomahawk: "true"}] run item modify entity @s weapon.mainhand icewind:update/music_disc/strad
+execute as @a[gamemode=!spectator] at @s if items entity @s weapon.offhand minecraft:music_disc_strad unless items entity @s weapon.offhand *[minecraft:custom_data={istomahawk: "true"}] run item modify entity @s weapon.offhand icewind:update/music_disc/strad
+execute as @a[gamemode=!spectator] at @s if items entity @s player.cursor minecraft:music_disc_strad unless items entity @s player.cursor *[minecraft:custom_data={istomahawk: "true"}] run item modify entity @s player.cursor icewind:update/music_disc/strad
+
+execute as @a[gamemode=!spectator] at @s if items entity @s weapon.mainhand minecraft:music_disc_mellohi unless items entity @s weapon.mainhand *[minecraft:custom_data={iscashmere: "true"}] run item modify entity @s weapon.mainhand icewind:update/music_disc/mellohi
+execute as @a[gamemode=!spectator] at @s if items entity @s weapon.offhand minecraft:music_disc_mellohi unless items entity @s weapon.offhand *[minecraft:custom_data={iscashmere: "true"}] run item modify entity @s weapon.offhand icewind:update/music_disc/mellohi
+execute as @a[gamemode=!spectator] at @s if items entity @s player.cursor minecraft:music_disc_mellohi unless items entity @s player.cursor *[minecraft:custom_data={iscashmere: "true"}] run item modify entity @s player.cursor icewind:update/music_disc/mellohi
 
 execute as @a at @s if items entity @s container.* #icewind:crafting/hand_fan run recipe give @s icewind:hand_fan
 execute as @a at @s if items entity @s container.* #icewind:crafting/waterskin run recipe give @s icewind:waterskin
