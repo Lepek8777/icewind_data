@@ -1,4 +1,30 @@
 execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~-0.1 ~ lava run scoreboard players add @s sc_temp 12
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~-0.1 ~-1 lava run scoreboard players add @s sc_temp 8
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~-0.1 ~1 lava run scoreboard players add @s sc_temp 8
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~1 ~-0.1 ~ lava run scoreboard players add @s sc_temp 8
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~-1 ~-0.1 ~ lava run scoreboard players add @s sc_temp 8
+
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~ ~-1 lava run scoreboard players add @s sc_temp 9
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~ ~1 lava run scoreboard players add @s sc_temp 9
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~1 ~ ~ lava run scoreboard players add @s sc_temp 9
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~-1 ~ ~ lava run scoreboard players add @s sc_temp 9
+
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~-1 ~ ~-1 lava run scoreboard players add @s sc_temp 8
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~1 ~ ~1 lava run scoreboard players add @s sc_temp 8
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~1 ~ ~1 lava run scoreboard players add @s sc_temp 8
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~-1 ~ ~-1 lava run scoreboard players add @s sc_temp 8
+
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~-1 ~ ~1 lava run scoreboard players add @s sc_temp 7
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~1 ~ ~-1 lava run scoreboard players add @s sc_temp 7
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~1 ~ ~-1 lava run scoreboard players add @s sc_temp 7
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~-1 ~ ~1 lava run scoreboard players add @s sc_temp 7
+
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~ ~-2 lava run scoreboard players add @s sc_temp 5
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~ ~2 lava run scoreboard players add @s sc_temp 5
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~2 ~ ~ lava run scoreboard players add @s sc_temp 5
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~-2 ~ ~ lava run scoreboard players add @s sc_temp 5
+
+
 execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~-1.1 ~ lava[level=9] run scoreboard players add @s sc_temp 5
 execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~-2.1 ~ lava[level=9] run scoreboard players add @s sc_temp 1
 execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~ ~ lava run scoreboard players add @s sc_temp 15
