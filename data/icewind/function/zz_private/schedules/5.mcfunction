@@ -138,16 +138,16 @@ execute as @a[gamemode=!spectator] run scoreboard players reset @s sc_waterskin.
 execute if data storage minecraft:sc_settings settings.temperature_difficulty.easy run function icewind:zz_private/main_functions/settings/actions/temperature_difficulty/easy
 execute if data storage minecraft:sc_settings settings.temperature_difficulty.hard run function icewind:zz_private/main_functions/settings/actions/temperature_difficulty/hard
 
-execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~ ~-0.8 minecraft:furnace[lit=true] run scoreboard players add @s sc_temp 4
-execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~ ~0.8 minecraft:furnace[lit=true] run scoreboard players add @s sc_temp 4
-execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~-0.8 ~ ~ minecraft:furnace[lit=true] run scoreboard players add @s sc_temp 4
-execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~0.8 ~ ~ minecraft:furnace[lit=true] run scoreboard players add @s sc_temp 4
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~ ~-0.8 #icewind:furnaces[lit=true] run scoreboard players add @s sc_temp 4
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~ ~0.8 #icewind:furnaces[lit=true] run scoreboard players add @s sc_temp 4
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~-0.8 ~ ~ #icewind:furnaces[lit=true] run scoreboard players add @s sc_temp 4
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~0.8 ~ ~ #icewind:furnaces[lit=true] run scoreboard players add @s sc_temp 4
 
-execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~-0.5 ~ minecraft:furnace[lit=true] run scoreboard players add @s sc_temp 3
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~-0.5 ~ #icewind:furnaces[lit=true] run scoreboard players add @s sc_temp 3
 
-execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~ ~-1.8 minecraft:furnace[lit=true] run scoreboard players add @s sc_temp 1
-execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~ ~1.8 minecraft:furnace[lit=true] run scoreboard players add @s sc_temp 1
-execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~-1.8 ~ ~ minecraft:furnace[lit=true] run scoreboard players add @s sc_temp 1
-execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~1.8 ~ ~ minecraft:furnace[lit=true] run scoreboard players add @s sc_temp 1
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~ ~-1.8 #icewind:furnaces[lit=true] run scoreboard players add @s sc_temp 1
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~ ~1.8 #icewind:furnaces[lit=true] run scoreboard players add @s sc_temp 1
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~-1.8 ~ ~ #icewind:furnaces[lit=true] run scoreboard players add @s sc_temp 1
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~1.8 ~ ~ #icewind:furnaces[lit=true] run scoreboard players add @s sc_temp 1
 
 schedule function icewind:zz_private/schedules/5 5s
