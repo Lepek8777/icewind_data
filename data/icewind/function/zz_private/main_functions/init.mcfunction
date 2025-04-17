@@ -3,6 +3,7 @@ scoreboard objectives add sc_temp dummy
 scoreboard objectives add sc_hasbait dummy
 scoreboard objectives add sc_used.fishing_rod minecraft.used:minecraft.fishing_rod
 scoreboard objectives add sc_enchantments.snow_aspect dummy
+scoreboard objectives add sc_goat.cooldown dummy
 scoreboard objectives add sc_nautilus_shell_cooldown dummy
 scoreboard objectives add sc_scarecrow.rotation dummy
 scoreboard objectives add sc_scarecrow.phantom dummy

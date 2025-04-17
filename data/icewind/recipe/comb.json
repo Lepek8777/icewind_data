@@ -1,0 +1,46 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"key": {
+		"W": "#minecraft:wooden_tool_materials",
+		"S": "minecraft:stick"
+	},
+	"pattern": [
+		"WS",
+		"WS",
+		"WS"
+	],
+	"result": {
+		"components": {
+			"minecraft:item_name": "{\"translate\":\"item.icewind.comb\"}",
+			"minecraft:custom_model_data": {
+				"strings": [
+					"comb"
+				]
+			},
+			"minecraft:custom_data": {
+				"iscomb": "true"
+			},
+			"!minecraft:jukebox_playable": {},
+			"minecraft:consumable": {
+				"consume_seconds": 1000000,
+				"animation": "none"
+			},
+			"minecraft:rarity": "common",
+			"minecraft:max_damage": 8,
+			"minecraft:tool": {
+				"rules": [
+					{
+						"blocks": "#icewind:mineable/comb",
+						"speed": 2.5,
+						"correct_for_drops": true
+					}
+				],
+				"damage_per_block": 1
+			},
+			"minecraft:damage": 0
+		},
+		"count": 1,
+		"id": "minecraft:music_disc_13"
+	}
+}

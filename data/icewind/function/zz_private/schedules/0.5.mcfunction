@@ -109,5 +109,6 @@ execute as @e[type=minecraft:drowned,tag=!drowned_done] at @s unless biome ~ ~ ~
 execute as @a[gamemode=!spectator] at @s as @e[predicate=icewind:farmer,distance=..35,limit=5,sort=random] run data modify entity @s DeathLootTable set value "icewind:entities/farmer"
 scoreboard players reset @e[scores={sc_enchantments.snow_aspect=..0}] sc_enchantments.snow_aspect
 
+scoreboard players reset @e[type=goat,tag=has_cashmere] sc_goat.cooldown
 
 schedule function icewind:zz_private/schedules/0.5 0.5s

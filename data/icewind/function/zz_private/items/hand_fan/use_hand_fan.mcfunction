@@ -1,4 +1,4 @@
-advancement revoke @s only icewind:use_hand_fan
+advancement revoke @s only icewind:utility/use_hand_fan
 
 scoreboard players add @s[gamemode=!spectator] sc_hand_fan 1
 

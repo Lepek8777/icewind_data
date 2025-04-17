@@ -1,4 +1,4 @@
-advancement revoke @s only icewind:waterskin_use
+advancement revoke @s only icewind:utility/waterskin_use
 
 execute as @s[gamemode=!spectator] at @s anchored eyes unless predicate icewind:is_sneaking unless block ^ ^ ^2.5 #icewind:water unless block ^ ^ ^2 #icewind:water if items entity @s weapon.mainhand *[minecraft:custom_data~{waterskin:"cold",iswaterskin:"true"}] run function icewind:zz_private/items/waterskin/use/drink/cold
 execute as @s[gamemode=!spectator] at @s anchored eyes unless predicate icewind:is_sneaking unless block ^ ^ ^2.5 #icewind:water unless block ^ ^ ^2 #icewind:water if items entity @s weapon.mainhand *[minecraft:custom_data~{waterskin:"neutral",iswaterskin:"true"}] run function icewind:zz_private/items/waterskin/use/drink/neutral

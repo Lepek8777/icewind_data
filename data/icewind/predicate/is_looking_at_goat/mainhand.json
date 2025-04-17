@@ -1,0 +1,26 @@
+{
+	"condition": "minecraft:entity_properties",
+	"entity": "this",
+	"predicate": {
+		"type_specific": {
+			"type": "minecraft:player",
+			"looking_at": {
+				"type": "minecraft:goat",
+				"nbt": "{Tags:[\"has_cashmere\"]}",
+				"flags": {
+					"is_baby": false
+				}
+			}
+		},
+		"slots": {
+			"weapon.mainhand": {
+				"items": "minecraft:music_disc_13",
+				"predicates": {
+					"minecraft:custom_data": {
+						"iscomb": "true"
+					}
+				}
+			}
+		}
+	}
+}

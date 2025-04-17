@@ -46,8 +46,9 @@ execute as @a[gamemode=!spectator,gamemode=!creative] at @s positioned over moti
 
 gamerule doImmediateRespawn true
 
-
-
+execute as @a[gamemode=!spectator] at @s as @e[type=goat,tag=!has_cashmere,tag=reg,distance=..50] run scoreboard players add @s sc_goat.cooldown 1
+execute as @a[gamemode=!spectator] at @s as @e[type=goat,tag=!has_cashmere,tag=reg,distance=..50,predicate=icewind:goats_terrain] run scoreboard players add @s sc_goat.cooldown 2
+tag @e[type=goat,scores={sc_goat.cooldown=48..}] add has_cashmere
 
 
 schedule function icewind:zz_private/schedules/10 10s
