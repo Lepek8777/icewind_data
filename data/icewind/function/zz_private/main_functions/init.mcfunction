@@ -7,6 +7,7 @@ scoreboard objectives add sc_goat.cooldown dummy
 scoreboard objectives add sc_nautilus_shell_cooldown dummy
 scoreboard objectives add sc_scarecrow.rotation dummy
 scoreboard objectives add sc_scarecrow.phantom dummy
+scoreboard objectives add sc_cashmere.counting dummy
 
 function icewind:zz_private/schedules/0.5
 function icewind:zz_private/schedules/1
@@ -14,6 +15,7 @@ function icewind:zz_private/schedules/10
 function icewind:zz_private/schedules/12
 function icewind:zz_private/schedules/5
 function icewind:zz_private/schedules/20
+function icewind:zz_private/schedules/0.2
 
 scoreboard objectives add sc_hand_fan dummy
 

@@ -1,0 +1,1 @@
+recipe take @s icewind:cashmere_hat
