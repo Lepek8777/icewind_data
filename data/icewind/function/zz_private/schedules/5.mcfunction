@@ -55,6 +55,7 @@ execute as @a[gamemode=!spectator,gamemode=!creative,scores={sc_temp=0..}] at @s
 execute as @a[gamemode=!spectator,gamemode=!creative] at @s if items entity @s armor.chest minecraft:leather_chestplate run scoreboard players add @s sc_temp 3
 execute as @a[gamemode=!spectator,gamemode=!creative] at @s if items entity @s armor.legs minecraft:leather_leggings run scoreboard players add @s sc_temp 2
 execute as @a[gamemode=!spectator,gamemode=!creative] at @s if items entity @s armor.feet minecraft:leather_boots run scoreboard players add @s sc_temp 1
+execute as @a[gamemode=!spectator,gamemode=!creative] if items entity @s armor.head *[minecraft:custom_data={iscashmere_hat: "true"}] run scoreboard players add @s sc_temp 7
 
 
 execute as @a[gamemode=!spectator,gamemode=!creative] at @s if block ~ ~ ~ #icewind:torches run scoreboard players add @s sc_temp 1
