@@ -1,3 +1,4 @@
 scoreboard players reset @s sc_used.fishing_rod
 
-execute as @s at @s if items entity @s weapon.offhand *[minecraft:custom_data={isbait: "true"}] positioned ~ ~1.5 ~ if entity @e[type=minecraft:fishing_bobber,distance=..0.4] run function icewind:zz_private/items/fishing_rod/success
+execute if data storage minecraft:sc_settings settings.fishing_bait_required as @s at @s if items entity @s weapon.offhand *[minecraft:custom_data={isbait: "true"}] positioned ~ ~1.5 ~ if entity @e[type=minecraft:fishing_bobber,distance=..0.55] run function icewind:zz_private/items/fishing_rod/success
+execute unless data storage minecraft:sc_settings settings.fishing_bait_required as @s at @s positioned ~ ~1.5 ~ if entity @e[type=minecraft:fishing_bobber,distance=..0.55] as @e[type=minecraft:fishing_bobber,distance=..0.55,limit=1,sort=nearest] at @s run scoreboard players set @s sc_hasbait 1

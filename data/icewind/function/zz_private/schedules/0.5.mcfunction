@@ -1,3 +1,5 @@
+execute if data storage minecraft:sc_settings settings.fishing_bait_required run function icewind:zz_private/main_functions/settings/actions/fishing_bait_required
+
 execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~-0.1 ~ lava run scoreboard players add @s sc_temp 12
 execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~-0.1 ~-1 lava run scoreboard players add @s sc_temp 8
 execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~-0.1 ~1 lava run scoreboard players add @s sc_temp 8

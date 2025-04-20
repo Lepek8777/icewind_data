@@ -1,0 +1,2 @@
+data remove storage minecraft:sc_settings settings.fishing_bait_required
+function icewind:settings
