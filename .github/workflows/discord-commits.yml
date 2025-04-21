@@ -15,9 +15,6 @@ jobs:
           GITHUB_REPO: ${{ github.repository }}
           AUTHOR: ${{ github.actor }}
         run: |
-          # Debug - Sprawdź, co jest w wydarzeniu
-          echo "Event data: $(cat $GITHUB_EVENT_PATH)"
-
           # Pobierz dane commitów
           COMMIT_MSG=$(jq -r '.head_commit.message' "$GITHUB_EVENT_PATH")
           COMMIT_URL=$(jq -r '.head_commit.url' "$GITHUB_EVENT_PATH")
@@ -26,15 +23,7 @@ jobs:
           REMOVED=$(jq -r '.head_commit.removed[]?' "$GITHUB_EVENT_PATH")
           MODIFIED=$(jq -r '.head_commit.modified[]?' "$GITHUB_EVENT_PATH")
 
-          # Wyświetl dane w konsoli do debugowania
-          echo "Commit message: $COMMIT_MSG"
-          echo "Commit URL: $COMMIT_URL"
-          echo "Commit ID: $COMMIT_ID"
-          echo "Added files: $ADDED"
-          echo "Removed files: $REMOVED"
-          echo "Modified files: $MODIFIED"
-
-          # Budowanie embedu
+          # Generowanie embedu
           FILES=""
           for FILE in $ADDED; do
             FILES="${FILES}➕ [${FILE}](https://github.com/${GITHUB_REPO}/blob/${COMMIT_ID}/${FILE})\n"
@@ -46,7 +35,6 @@ jobs:
             FILES="${FILES}📝 [${FILE}](https://github.com/${GITHUB_REPO}/blob/${COMMIT_ID}/${FILE})\n"
           done
 
-          # Generowanie embedu
           EMBED=$(jq -n --arg msg "$COMMIT_MSG" \
                          --arg url "$COMMIT_URL" \
                          --arg author "$AUTHOR" \
