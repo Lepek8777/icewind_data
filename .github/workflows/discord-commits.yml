@@ -9,48 +9,26 @@ jobs:
   discord:
     runs-on: ubuntu-latest
     steps:
-      - name: Send fancy embed to Discord
+      - name: Send commit message to Discord
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           GITHUB_REPO: ${{ github.repository }}
-          AUTHOR: ${{ github.actor }}
         run: |
           # Pobierz dane commitów
           COMMIT_MSG=$(jq -r '.head_commit.message' "$GITHUB_EVENT_PATH")
           COMMIT_URL=$(jq -r '.head_commit.url' "$GITHUB_EVENT_PATH")
           COMMIT_ID=$(jq -r '.head_commit.id' "$GITHUB_EVENT_PATH")
-          ADDED=$(jq -r '.head_commit.added[]?' "$GITHUB_EVENT_PATH")
-          REMOVED=$(jq -r '.head_commit.removed[]?' "$GITHUB_EVENT_PATH")
-          MODIFIED=$(jq -r '.head_commit.modified[]?' "$GITHUB_EVENT_PATH")
 
           # Generowanie embedu
-          FILES=""
-          for FILE in $ADDED; do
-            FILES="${FILES}➕ [${FILE}](https://github.com/${GITHUB_REPO}/blob/${COMMIT_ID}/${FILE})\n"
-          done
-          for FILE in $REMOVED; do
-            FILES="${FILES}➖ ~~${FILE}~~\n"
-          done
-          for FILE in $MODIFIED; do
-            FILES="${FILES}📝 [${FILE}](https://github.com/${GITHUB_REPO}/blob/${COMMIT_ID}/${FILE})\n"
-          done
-
           EMBED=$(jq -n --arg msg "$COMMIT_MSG" \
                          --arg url "$COMMIT_URL" \
-                         --arg author "$AUTHOR" \
-                         --arg files "$FILES" \
+                         --arg commit_id "$COMMIT_ID" \
                          '{
                             "embeds": [{
                               "title": "📦 New Commit",
                               "url": $url,
-                              "description": "**Author:** `" + $author + "`\n**Message:** " + $msg,
+                              "description": "**Commit Message:** " + $msg,
                               "color": 8224125, # dark gray (#7D7D7D)
-                              "fields": [
-                                {
-                                  "name": "📁 Files Changed",
-                                  "value": ($files | if . == "" then "No file changes" else . end)
-                                }
-                              ],
                               "timestamp": now | todate
                             }]
                           }')
