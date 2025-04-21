@@ -1,4 +1,4 @@
-name: Notify Discord with Embed
+name: Notify Discord on Commit
 
 on:
   push:
@@ -6,35 +6,17 @@ on:
       - datapack
 
 jobs:
-  discord:
+  send-discord-message:
     runs-on: ubuntu-latest
     steps:
-      - name: Send commit message to Discord
+      - name: Format and send commit message
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-          GITHUB_REPO: ${{ github.repository }}
+          GITHUB_ACTOR: ${{ github.actor }}
+          COMMIT_MSG: ${{ github.event.head_commit.message }}
+          COMMIT_URL: ${{ github.event.head_commit.url }}
         run: |
-          # Pobierz dane commitów
-          COMMIT_MSG=$(jq -r '.head_commit.message' "$GITHUB_EVENT_PATH")
-          COMMIT_URL=$(jq -r '.head_commit.url' "$GITHUB_EVENT_PATH")
-          COMMIT_ID=$(jq -r '.head_commit.id' "$GITHUB_EVENT_PATH")
-
-          # Generowanie embedu
-          EMBED=$(jq -n --arg msg "$COMMIT_MSG" \
-                         --arg url "$COMMIT_URL" \
-                         --arg commit_id "$COMMIT_ID" \
-                         '{
-                            "embeds": [{
-                              "title": "📦 New Commit",
-                              "url": $url,
-                              "description": "**Commit Message:** " + $msg,
-                              "color": 8224125, # dark gray (#7D7D7D)
-                              "timestamp": now | todate
-                            }]
-                          }')
-
-          # Wysyłanie embedu do Discorda
           curl -H "Content-Type: application/json" \
-               -X POST \
-               -d "$EMBED" \
-               "$DISCORD_WEBHOOK"
+          -X POST \
+          -d "{\"content\": \"📦 **New commit** by \`${GITHUB_ACTOR}\`:\n> ${COMMIT_MSG}\n🔗 ${COMMIT_URL}\"}" \
+          $DISCORD_WEBHOOK
