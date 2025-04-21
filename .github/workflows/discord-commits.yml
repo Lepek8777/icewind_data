@@ -15,6 +15,9 @@ jobs:
           GITHUB_REPO: ${{ github.repository }}
           AUTHOR: ${{ github.actor }}
         run: |
+          # Debugging - Print the event data to the console
+          echo "Event data: $(cat $GITHUB_EVENT_PATH)"
+
           COMMIT_MSG=$(jq -r '.head_commit.message' "$GITHUB_EVENT_PATH")
           COMMIT_URL=$(jq -r '.head_commit.url' "$GITHUB_EVENT_PATH")
           COMMIT_ID=$(jq -r '.head_commit.id' "$GITHUB_EVENT_PATH")
@@ -53,6 +56,7 @@ jobs:
                             }]
                           }')
 
+          # Send the data to Discord
           curl -H "Content-Type: application/json" \
                -X POST \
                -d "$EMBED" \
