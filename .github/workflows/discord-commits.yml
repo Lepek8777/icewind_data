@@ -1,4 +1,4 @@
-name: Notify Discord on Commit
+name: Notify Discord with Embed
 
 on:
   push:
@@ -6,17 +6,54 @@ on:
       - datapack
 
 jobs:
-  send-discord-message:
+  discord:
     runs-on: ubuntu-latest
     steps:
-      - name: Format and send commit message
+      - name: Send fancy embed to Discord
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-          GITHUB_ACTOR: ${{ github.actor }}
-          COMMIT_MSG: ${{ github.event.head_commit.message }}
-          COMMIT_URL: ${{ github.event.head_commit.url }}
+          GITHUB_REPO: ${{ github.repository }}
+          AUTHOR: ${{ github.actor }}
         run: |
+          COMMIT_MSG=$(jq -r '.head_commit.message' "$GITHUB_EVENT_PATH")
+          COMMIT_URL=$(jq -r '.head_commit.url' "$GITHUB_EVENT_PATH")
+          COMMIT_ID=$(jq -r '.head_commit.id' "$GITHUB_EVENT_PATH")
+          ADDED=$(jq -r '.head_commit.added[]?' "$GITHUB_EVENT_PATH")
+          REMOVED=$(jq -r '.head_commit.removed[]?' "$GITHUB_EVENT_PATH")
+          MODIFIED=$(jq -r '.head_commit.modified[]?' "$GITHUB_EVENT_PATH")
+
+          FILES=""
+          for FILE in $ADDED; do
+            FILES="${FILES}➕ [${FILE}](https://github.com/${GITHUB_REPO}/blob/${COMMIT_ID}/${FILE})\n"
+          done
+          for FILE in $REMOVED; do
+            FILES="${FILES}➖ ~~${FILE}~~\n"
+          done
+          for FILE in $MODIFIED; do
+            FILES="${FILES}📝 [${FILE}](https://github.com/${GITHUB_REPO}/blob/${COMMIT_ID}/${FILE})\n"
+          done
+
+          EMBED=$(jq -n --arg msg "$COMMIT_MSG" \
+                         --arg url "$COMMIT_URL" \
+                         --arg author "$AUTHOR" \
+                         --arg files "$FILES" \
+                         '{
+                            "embeds": [{
+                              "title": "📦 New Commit",
+                              "url": $url,
+                              "description": "**Author:** `" + $author + "`\n**Message:** " + $msg,
+                              "color": 8224125, # dark gray (#7D7D7D)
+                              "fields": [
+                                {
+                                  "name": "📁 Files Changed",
+                                  "value": ($files | if . == "" then "No file changes" else . end)
+                                }
+                              ],
+                              "timestamp": now | todate
+                            }]
+                          }')
+
           curl -H "Content-Type: application/json" \
-          -X POST \
-          -d "{\"content\": \"📦 **New commit** by \`${GITHUB_ACTOR}\`:\n> ${COMMIT_MSG}\n🔗 ${COMMIT_URL}\"}" \
-          $DISCORD_WEBHOOK
+               -X POST \
+               -d "$EMBED" \
+               "$DISCORD_WEBHOOK"
