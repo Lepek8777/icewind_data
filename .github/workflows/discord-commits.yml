@@ -9,31 +9,17 @@ jobs:
   send-discord-message:
     runs-on: ubuntu-latest
     steps:
-      - name: Send embed to Discord
+      - name: Format and send commit message
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-          COMMIT_MSG: ${{ github.event.head_commit.message }}
+          GITHUB_ACTOR: ${{ github.actor }}
           COMMIT_URL: ${{ github.event.head_commit.url }}
-          COMMIT_AUTHOR: ${{ github.actor }}
         run: |
-          TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
-
-          jq -n --arg msg "$COMMIT_MSG" \
-                --arg url "$COMMIT_URL" \
-                --arg user "$COMMIT_AUTHOR" \
-                --arg time "$TIMESTAMP" \
-                '{
-                  "embeds": [{
-                    "title": "📦 New Commit",
-                    "description": $msg,
-                    "url": $url,
-                    "color": 7506394,
-                    "footer": {
-                      "text": "by " + $user + " • " + $time
-                    }
-                  }]
-                }' > payload.json
-
-          curl -X POST -H "Content-Type: application/json" \
-               -d @payload.json \
+          FULL_MSG=$(jq -r '.head_commit.message' "$GITHUB_EVENT_PATH")
+          TITLE=$(echo "$FULL_MSG" | head -n1)
+          DESC=$(echo "$FULL_MSG" | sed -n '2,$p')
+          [ -z "$DESC" ] && DESC="(no description)"
+          curl -H "Content-Type: application/json" \
+               -X POST \
+               -d "{\"content\": \"📦 **New commit** by \`${GITHUB_ACTOR}\`:\n**Title:** ${TITLE}\n**Description:** ${DESC}\n🔗 ${COMMIT_URL}\"}" \
                "$DISCORD_WEBHOOK"
