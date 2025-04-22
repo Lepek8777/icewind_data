@@ -5,7 +5,7 @@
 		"location": {
 			"position": {
 				"y": {
-					"min": 115
+					"min": 125
 				}
 			},
 			"dimension": "minecraft:overworld"
