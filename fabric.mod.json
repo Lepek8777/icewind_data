@@ -1,0 +1,44 @@
+{
+    "schemaVersion": 1,
+    "id": "icewind",
+    "version": "1.0",
+    "name": "Icewind",
+    "description": "Temperature system mod",
+    "authors": [
+        {
+            "name": "Lepek8777",
+            "contact": {
+                "email": "lepek8931@gmail.com"
+            }
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Karol880",
+            "contact": {
+                "email": "piaskowskikarol38@gmail.com",
+                "homepage": "https://linktr.ee/Ertave"
+            }
+        }
+    ],
+    "contact": {
+        "homepage": "https://modrinth.com/datapack/icewind",
+        "issues": "https://github.com/Lepek8777/icewind_assets/issues",
+        "sources": "https://github.com/Lepek8777/icewind_assets"
+    },
+    "license": "MIT License",
+    "icon": "pack.png",
+    "provides": [],
+    "environment": "*",
+    "mixins": [],
+    "depends": {
+        "fabricloader": ">=0.16.10",
+        "minecraft": "1.21.4",
+        "java": ">=21",
+        "fabric-api": "*"
+    },
+    "suggests": {},
+    "breaks": {
+        "cold_sweat": "cold_sweat"
+    }
+}
