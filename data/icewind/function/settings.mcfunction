@@ -1,7 +1,7 @@
 gamerule sendCommandFeedback false
 playsound minecraft:ui.loom.select_pattern master @s ~ ~ ~ 0.5
 playsound minecraft:block.note_block.hat master @s ~ ~ ~
-tellraw @s {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n   ","extra":[{"translate":"gui.icewind.settings.settings","fallback":"Texturepack is missing :<","color":"gray"},{"text":" - ","color":"dark_gray"},{"text":"Icewind","color":"#699eb5","clickEvent":{"action":"open_url","value":"https://github.com/Lepek8777/icewind_assets"},"hoverEvent":{"action":"show_text","value":{"text":"https://github.com/Lepek8777/icewind_assets","color":"#699eb5"}}},"\n\n"]}
+tellraw @s {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n   ","extra":[{"translate":"gui.icewind.settings.settings","fallback":"Texturepack is missing :<","color":"gray"},{"text":" - ","color":"dark_gray"},{"text":"Icewind","color":"#699eb5","clickEvent":{"action":"open_url","value":"https://modrinth.com/datapack/icewind"},"hoverEvent":{"action":"show_text","value":{"text":"https://modrinth.com/datapack/icewind","color":"#699eb5"}}},"\n\n"]}
 
 
 execute unless data storage minecraft:sc_settings settings.show_indicator run tellraw @s {"translate":"gui.icewind.settings.show_indicator","extra":[" ",{"translate":"options.off","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/function icewind:zz_private/main_functions/settings/set/show_indicator/off"}},{"text":"/","color":"dark_gray"},{"translate":"options.on","color":"dark_green","bold":false,"clickEvent":{"action":"run_command","value":"/function icewind:zz_private/main_functions/settings/set/show_indicator/on"}}],"color":"#695ab5"}
