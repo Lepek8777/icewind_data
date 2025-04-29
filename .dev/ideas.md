@@ -9,3 +9,4 @@
 - [ ] Fluctuating temperature (And new setting to disable that). 
 - [ ] Mini-game when catching fish.
 - [ ] Rotting food.
+- [ ] biome temperature book (you have to fish it out)
