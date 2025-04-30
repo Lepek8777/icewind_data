@@ -4,5 +4,5 @@ loaderVersion = '[40,)'
 license = 'MIT'
 showAsResourcePack = false
 mods = [
-	{ modId = 'icewind', version = '1.0', displayName = 'Icewind', description = 'Icewind is a datapack&resourcepack/mod based on temperature and a lot of more details that make the game immersive.', logoFile = 'pack.png', authors = 'Lepek8777, Karol880', displayURL = 'https://modrinth.com/datapack/icewind' },
+	{ modId = 'icewind', version = '1.1', displayName = 'Icewind', description = 'Icewind is a datapack&resourcepack/mod based on temperature and a lot of more details that make the game immersive.', logoFile = 'pack.png', authors = 'Lepek8777, Karol880', displayURL = 'https://modrinth.com/datapack/icewind' },
 ]
