@@ -18,4 +18,8 @@ recipe take @a[gamemode=!spectator] icewind:cashmere_hat/red
 recipe take @a[gamemode=!spectator] icewind:cashmere_hat/white
 recipe take @a[gamemode=!spectator] icewind:cashmere_hat/yellow
 
+#I'll work on that later
+#recipe take @a[gamemode=!spectator] icewind:cooked_shrimp
+#recipe take @a[gamemode=!spectator] icewind:cooked_shrimp_from_smoking
+
 schedule function icewind:zz_private/schedules/0.2 0.2s
