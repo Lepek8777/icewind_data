@@ -22,4 +22,8 @@ recipe take @a[gamemode=!spectator] icewind:cashmere_hat/yellow
 #recipe take @a[gamemode=!spectator] icewind:cooked_shrimp
 #recipe take @a[gamemode=!spectator] icewind:cooked_shrimp_from_smoking
 
+execute as @e[gamemode=!spectator] unless items entity @s container.* minecraft:music_disc_mall[minecraft:custom_model_data={strings:["shrimp"]}] run recipe take @s icewind:cooked_shrimp
+execute as @e[gamemode=!spectator] unless items entity @s container.* minecraft:music_disc_mall[minecraft:custom_model_data={strings:["shrimp"]}] run recipe take @s icewind:cooked_shrimp_from_smoking
+
+
 schedule function icewind:zz_private/schedules/0.2 0.2s
