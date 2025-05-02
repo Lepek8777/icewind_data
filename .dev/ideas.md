@@ -10,3 +10,4 @@
 - [ ] Mini-game when catching fish.
 - [ ] Rotting food.
 - [ ] biome temperature book (you have to fish it out)
+- [ ] Hook icon next to bait items group (For example: Earthworms)

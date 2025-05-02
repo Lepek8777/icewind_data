@@ -18,9 +18,6 @@ recipe take @a[gamemode=!spectator] icewind:cashmere_hat/red
 recipe take @a[gamemode=!spectator] icewind:cashmere_hat/white
 recipe take @a[gamemode=!spectator] icewind:cashmere_hat/yellow
 
-#I'll work on that later
-#recipe take @a[gamemode=!spectator] icewind:cooked_shrimp
-#recipe take @a[gamemode=!spectator] icewind:cooked_shrimp_from_smoking
 
 execute as @e[gamemode=!spectator] unless items entity @s container.* minecraft:music_disc_mall[minecraft:custom_model_data={strings:["shrimp"]}] run recipe take @s icewind:cooked_shrimp
 execute as @e[gamemode=!spectator] unless items entity @s container.* minecraft:music_disc_mall[minecraft:custom_model_data={strings:["shrimp"]}] run recipe take @s icewind:cooked_shrimp_from_smoking
