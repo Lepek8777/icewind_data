@@ -25,5 +25,14 @@ recipe take @a[gamemode=!spectator] icewind:cashmere_hat/yellow
 execute as @e[gamemode=!spectator] unless items entity @s container.* minecraft:music_disc_mall[minecraft:custom_model_data={strings:["shrimp"]}] run recipe take @s icewind:cooked_shrimp
 execute as @e[gamemode=!spectator] unless items entity @s container.* minecraft:music_disc_mall[minecraft:custom_model_data={strings:["shrimp"]}] run recipe take @s icewind:cooked_shrimp_from_smoking
 
+execute as @e[gamemode=!spectator] unless items entity @s container.* minecraft:music_disc_ward[minecraft:custom_model_data={strings:["catfish"]}] run recipe take @s icewind:cooked_catfish
+execute as @e[gamemode=!spectator] unless items entity @s container.* minecraft:music_disc_ward[minecraft:custom_model_data={strings:["catfish"]}] run recipe take @s icewind:cooked_catfish_from_smoking
+
+execute as @e[gamemode=!spectator] unless items entity @s container.* minecraft:music_disc_stal[minecraft:custom_model_data={strings:["argentine"]}] run recipe take @s icewind:cooked_argentine
+execute as @e[gamemode=!spectator] unless items entity @s container.* minecraft:music_disc_stal[minecraft:custom_model_data={strings:["argentine"]}] run recipe take @s icewind:cooked_argentine_from_smoking
+
+execute as @e[gamemode=!spectator] unless items entity @s container.* minecraft:music_disc_pigstep[minecraft:custom_model_data={strings:["carp"]}] run recipe take @s icewind:cooked_carp
+execute as @e[gamemode=!spectator] unless items entity @s container.* minecraft:music_disc_pigstep[minecraft:custom_model_data={strings:["carp"]}] run recipe take @s icewind:cooked_carp_from_smoking
+
 
 schedule function icewind:zz_private/schedules/0.2 0.2s
