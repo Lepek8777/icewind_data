@@ -24,7 +24,8 @@
         },
         "minecraft:item_name": "{\"translate\":\"item.icewind.cooked_shrimp\"}",
         "minecraft:custom_data": {
-          "iscookedshrimp": "true"
+          "iscookedshrimp": "true",
+          "isbait": "true"
         }
       }
     }
