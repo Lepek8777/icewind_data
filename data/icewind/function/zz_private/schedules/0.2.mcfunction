@@ -32,4 +32,6 @@ execute as @e[gamemode=!spectator] unless items entity @s container.* minecraft:
 execute as @e[gamemode=!spectator] unless items entity @s container.* minecraft:music_disc_pigstep[minecraft:custom_model_data={strings:["carp"]}] run recipe take @s icewind:cooked_carp_from_smoking
 
 
+execute if data storage minecraft:sc_settings settings.show_temperature_icon_in_nicks run function icewind:zz_private/main_functions/settings/actions/show_temperature_icon_in_nicks
+
 schedule function icewind:zz_private/schedules/0.2 0.2s

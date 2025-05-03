@@ -1,0 +1,2 @@
+execute unless data storage minecraft:sc_settings settings.show_temperature_icon_in_nicks run function icewind:zz_private/main_functions/settings/set/show_temperature_icon_in_nicks/off
+execute if data storage minecraft:sc_settings settings.show_temperature_icon_in_nicks run function icewind:zz_private/main_functions/settings/set/show_temperature_icon_in_nicks/on

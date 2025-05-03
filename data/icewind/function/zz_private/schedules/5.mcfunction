@@ -151,4 +151,6 @@ execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~ ~1.8 #i
 execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~-1.8 ~ ~ #icewind:furnaces[lit=true] run scoreboard players add @s sc_temp 1
 execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~1.8 ~ ~ #icewind:furnaces[lit=true] run scoreboard players add @s sc_temp 1
 
+function icewind:zz_private/main_functions/settings/set/show_temperature_icon_in_nicks/refresh
+
 schedule function icewind:zz_private/schedules/5 5s
