@@ -76,6 +76,7 @@ execute as @a at @s if items entity @s container.* #icewind:crafting/sweet_berry
 execute as @a at @s if items entity @s container.* #icewind:crafting/comb run recipe give @s icewind:comb
 execute as @a at @s if items entity @s container.* minecraft:bread run recipe give @s icewind:bread_piece
 execute as @a at @s if items entity @s container.* minecraft:sunflower run recipe give @s icewind:sunflower_seed
+execute as @a at @s if items entity @s container.* minecraft:wheat run recipe give @s icewind:cereal_coffee
 
 execute as @a at @s if items entity @s container.* #icewind:crafting/tomahawk/wooden run recipe give @s icewind:tomahawk/wooden_tomahawk
 execute as @a at @s if items entity @s container.* #icewind:crafting/tomahawk/stone run recipe give @s icewind:tomahawk/stone_tomahawk
