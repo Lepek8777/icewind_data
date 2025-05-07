@@ -22,6 +22,20 @@
           }
         ]
       }
+    },
+    "baker3": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "icewind:croissant",
+        "ingredients": [
+          {
+            "items": "minecraft:wheat"
+          },
+          {
+            "items": "minecraft:sugar"
+          }
+        ]
+      }
     }
   },
   "display": {
@@ -49,12 +63,14 @@
   "requirements": [
     [
       "baker",
-      "baker2"
+      "baker2",
+      "baker3"
     ]
   ],
   "rewards": {
     "recipes": [
-      "icewind:roll"
+      "icewind:roll",
+      "icewind:croissant"
     ]
   }
 }
