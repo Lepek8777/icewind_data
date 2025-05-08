@@ -23,7 +23,9 @@
           ]
         },
         "minecraft:rarity": "common",
-        "minecraft:item_name": "{\"translate\":\"item.icewind.cereal_coffee\"}",
+        "minecraft:item_name": {
+          "translate": "item.icewind.cereal_coffee"
+        },
         "minecraft:custom_data": {
           "ishot_food": "true"
         },

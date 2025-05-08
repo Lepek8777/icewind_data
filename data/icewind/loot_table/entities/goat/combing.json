@@ -1,1 +1,93 @@
-{"type":"minecraft:entity","pools":[{"bonus_rolls":0,"entries":[{"type":"minecraft:item","name":"minecraft:music_disc_mellohi","functions":[{"function":"minecraft:set_components","components":{"minecraft:custom_model_data":{"strings":["cashmere"]},"minecraft:item_name":"{\"translate\":\"item.icewind.cashmere\"}","minecraft:rarity":"uncommon","minecraft:max_stack_size":64,"!minecraft:jukebox_playable":{},"minecraft:custom_data":{"iscashmere":"true"}}}],"conditions":[{"condition":"minecraft:random_chance","chance":0.08}]}],"rolls":1.5},{"rolls":1,"entries":[{"type":"minecraft:alternatives","children":[{"type":"minecraft:item","name":"minecraft:light_gray_wool","functions":[{"function":"minecraft:set_count","count":{"type":"minecraft:uniform","min":1,"max":2}}],"conditions":[{"condition":"minecraft:random_chance","chance":0.7}]},{"type":"minecraft:item","name":"minecraft:white_wool","functions":[{"function":"minecraft:set_count","count":{"type":"minecraft:uniform","min":1,"max":2},"conditions":[{"condition":"minecraft:random_chance","chance":0.4}]}]}],"functions":[],"conditions":[]}]}],"random_sequence":"icewind:entities/goat/combing"}
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "bonus_rolls": 0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:music_disc_mellohi",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_model_data": {
+                                    "strings": [
+                                        "cashmere"
+                                    ]
+                                },
+                                "minecraft:item_name": "{\"translate\":\"item.icewind.cashmere\"}",
+                                "minecraft:rarity": "uncommon",
+                                "minecraft:max_stack_size": 64,
+                                "!minecraft:jukebox_playable": {},
+                                "minecraft:custom_data": {
+                                    "iscashmere": "true"
+                                }
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.08
+                        }
+                    ]
+                }
+            ],
+            "rolls": 1.5
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:alternatives",
+                    "children": [
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:light_gray_wool",
+                            "functions": [
+                                {
+                                    "function": "minecraft:set_count",
+                                    "count": {
+                                        "type": "minecraft:uniform",
+                                        "min": 1,
+                                        "max": 2
+                                    }
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.7
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:white_wool",
+                            "functions": [
+                                {
+                                    "function": "minecraft:set_count",
+                                    "count": {
+                                        "type": "minecraft:uniform",
+                                        "min": 1,
+                                        "max": 2
+                                    },
+                                    "conditions": [
+                                        {
+                                            "condition": "minecraft:random_chance",
+                                            "chance": 0.4
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "functions": [],
+                    "conditions": []
+                }
+            ]
+        }
+    ],
+    "random_sequence": "icewind:entities/goat/combing"
+}

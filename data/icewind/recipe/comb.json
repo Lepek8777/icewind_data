@@ -12,7 +12,9 @@
 	],
 	"result": {
 		"components": {
-			"minecraft:item_name": "{\"translate\":\"item.icewind.comb\"}",
+			"minecraft:item_name": {
+				"translate": "item.icewind.comb"
+			},
 			"minecraft:custom_model_data": {
 				"strings": [
 					"comb"

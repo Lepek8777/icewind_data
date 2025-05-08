@@ -13,7 +13,9 @@
 				]
 			},
 			"minecraft:rarity": "common",
-			"minecraft:item_name": "{\"translate\":\"item.icewind.bread_piece\"}",
+			"minecraft:item_name": {
+				"translate": "item.icewind.bread_piece"
+			},
 			"minecraft:custom_data": {
 				"isbait": "true"
 			},
