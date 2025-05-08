@@ -20,7 +20,9 @@
   "result": {
     "id": "minecraft:music_disc_13",
     "components": {
-      "minecraft:item_name": "{\"translate\":\"item.icewind.sweet_berry_ice_cream\"}",
+      "minecraft:item_name": {
+        "translate": "item.icewind.sweet_berry_ice_cream"
+      },
       "minecraft:custom_model_data": {
         "strings": [
           "sweet_berry_ice_cream"

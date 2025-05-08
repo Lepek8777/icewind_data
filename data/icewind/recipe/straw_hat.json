@@ -31,7 +31,9 @@
           "damage_on_hurt": false,
           "equip_on_interact": false
         },
-        "minecraft:item_name": "{\"translate\":\"item.icewind.straw_hat\"}",
+        "minecraft:item_name": {
+          "translate": "item.icewind.straw_hat"
+        },
         "minecraft:rarity": "common"
       }
     }

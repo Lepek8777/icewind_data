@@ -11,7 +11,9 @@
     "id": "minecraft:music_disc_13",
     "components": {
       "!minecraft:jukebox_playable": {},
-      "minecraft:item_name": "{\"translate\":\"item.icewind.sunflower_seed\"}",
+      "minecraft:item_name": {
+        "translate": "item.icewind.sunflower_seed"
+      },
       "minecraft:custom_model_data": {
         "strings": [
           "sunflower_seed"

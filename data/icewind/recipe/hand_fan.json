@@ -27,10 +27,14 @@
       },
       "minecraft:custom_data": "{hand_fan: \"true\"}",
       "minecraft:rarity": "common",
-      "minecraft:item_name": "{\"translate\":\"item.icewind.hand_fan\"}",
-      "minecraft:dyed_color": {
-        "rgb": 16777215,
-        "show_in_tooltip": false
+      "minecraft:item_name": {
+        "translate": "item.icewind.hand_fan"
+      },
+      "minecraft:dyed_color": 16777215,
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "minecraft:dyed_color"
+        ]
       }
     }
   },

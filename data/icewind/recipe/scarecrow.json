@@ -26,7 +26,9 @@
           "scarecrow_item"
         ]
       },
-      "minecraft:item_name": "{\"translate\":\"item.icewind.scarecrow\"}",
+      "minecraft:item_name": {
+        "translate": "item.icewind.scarecrow"
+      },
       "minecraft:consumable": {
         "consume_seconds": 1000000,
         "animation": "none",

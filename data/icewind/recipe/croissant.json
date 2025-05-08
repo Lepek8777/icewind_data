@@ -1,1 +1,44 @@
-{"type":"minecraft:crafting_shaped","category":"misc","pattern":["YXY","XYX"],"key":{"X":"minecraft:wheat","Y":"minecraft:sugar"},"result":{"id":"minecraft:music_disc_13","components":{"!minecraft:jukebox_playable":{},"minecraft:item_name":"{\"translate\":\"item.icewind.croissant\"}","minecraft:custom_model_data":{"strings":["croissant"]},"minecraft:consumable":{"consume_seconds":1.5,"animation":"eat","sound":"minecraft:entity.generic.eat","has_consume_particles":true,"on_consume_effects":[]},"minecraft:rarity":"common","minecraft:max_stack_size":64,"minecraft:custom_data":{"isroll":"true"},"minecraft:food":{"nutrition":6,"saturation":3,"can_always_eat":false}},"count":1}}
+{
+    "category": "misc",
+    "key": {
+        "X": "minecraft:wheat",
+        "Y": "minecraft:sugar"
+    },
+    "pattern": [
+        "YXY",
+        "XYX"
+    ],
+    "result": {
+        "components": {
+            "!minecraft:jukebox_playable": {},
+            "minecraft:consumable": {
+                "animation": "eat",
+                "consume_seconds": 1.5,
+                "has_consume_particles": true,
+                "on_consume_effects": [],
+                "sound": "minecraft:entity.generic.eat"
+            },
+            "minecraft:custom_data": {
+                "isroll": "true"
+            },
+            "minecraft:custom_model_data": {
+                "strings": [
+                    "croissant"
+                ]
+            },
+            "minecraft:food": {
+                "can_always_eat": false,
+                "nutrition": 6,
+                "saturation": 3
+            },
+            "minecraft:item_name": {
+                "translate": "item.icewind.croissant"
+            },
+            "minecraft:max_stack_size": 64,
+            "minecraft:rarity": "common"
+        },
+        "count": 1,
+        "id": "minecraft:music_disc_13"
+    },
+    "type": "minecraft:crafting_shaped"
+}

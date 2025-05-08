@@ -28,7 +28,9 @@
 				]
 			},
 			"minecraft:rarity": "common",
-			"minecraft:item_name": "{\"translate\":\"item.icewind.waterskin\"}"
+			"minecraft:item_name": {
+				"translate": "item.icewind.waterskin"
+			}
 		},
 		"count": 1
 	},
