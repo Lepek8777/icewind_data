@@ -1,5 +1,3 @@
-execute if data storage minecraft:sc_settings settings.fishing_bait_required run function icewind:zz_private/main_functions/settings/actions/fishing_bait_required
-
 execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~-0.1 ~ lava run scoreboard players add @s sc_temp 12
 execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~-0.1 ~-1 lava run scoreboard players add @s sc_temp 8
 execute as @a[gamemode=!creative,gamemode=!spectator] at @s if block ~ ~-0.1 ~1 lava run scoreboard players add @s sc_temp 8
@@ -63,6 +61,22 @@ execute as @a[gamemode=!spectator] at @s if items entity @s player.cursor minecr
 execute as @a[gamemode=!spectator] at @s if items entity @s weapon.mainhand minecraft:music_disc_mellohi unless items entity @s weapon.mainhand *[minecraft:custom_data={iscashmere: "true"}] run item modify entity @s weapon.mainhand icewind:update/music_disc/mellohi
 execute as @a[gamemode=!spectator] at @s if items entity @s weapon.offhand minecraft:music_disc_mellohi unless items entity @s weapon.offhand *[minecraft:custom_data={iscashmere: "true"}] run item modify entity @s weapon.offhand icewind:update/music_disc/mellohi
 execute as @a[gamemode=!spectator] at @s if items entity @s player.cursor minecraft:music_disc_mellohi unless items entity @s player.cursor *[minecraft:custom_data={iscashmere: "true"}] run item modify entity @s player.cursor icewind:update/music_disc/mellohi
+
+execute as @a[gamemode=!spectator] at @s if items entity @s weapon.mainhand minecraft:music_disc_mall unless items entity @s weapon.mainhand *[minecraft:custom_model_data={strings:["shrimp"]}] run item modify entity @s weapon.mainhand icewind:update/music_disc/mall
+execute as @a[gamemode=!spectator] at @s if items entity @s weapon.offhand minecraft:music_disc_mall unless items entity @s weapon.offhand *[minecraft:custom_model_data={strings:["shrimp"]}] run item modify entity @s weapon.offhand icewind:update/music_disc/mall
+execute as @a[gamemode=!spectator] at @s if items entity @s player.cursor minecraft:music_disc_mall unless items entity @s player.cursor *[minecraft:custom_model_data={strings:["shrimp"]}] run item modify entity @s player.cursor icewind:update/music_disc/mall
+
+execute as @a[gamemode=!spectator] at @s if items entity @s weapon.mainhand minecraft:music_disc_pigstep unless items entity @s weapon.mainhand *[minecraft:custom_model_data={strings:["carp"]}] run item modify entity @s weapon.mainhand icewind:update/music_disc/pigstep
+execute as @a[gamemode=!spectator] at @s if items entity @s weapon.offhand minecraft:music_disc_pigstep unless items entity @s weapon.offhand *[minecraft:custom_model_data={strings:["carp"]}] run item modify entity @s weapon.offhand icewind:update/music_disc/pigstep
+execute as @a[gamemode=!spectator] at @s if items entity @s player.cursor minecraft:music_disc_pigstep unless items entity @s player.cursor *[minecraft:custom_model_data={strings:["carp"]}] run item modify entity @s player.cursor icewind:update/music_disc/pigstep
+
+execute as @a[gamemode=!spectator] at @s if items entity @s weapon.mainhand minecraft:music_disc_stal unless items entity @s weapon.mainhand *[minecraft:custom_model_data={strings:["argentine"]}] run item modify entity @s weapon.mainhand icewind:update/music_disc/stal
+execute as @a[gamemode=!spectator] at @s if items entity @s weapon.offhand minecraft:music_disc_stal unless items entity @s weapon.offhand *[minecraft:custom_model_data={strings:["argentine"]}] run item modify entity @s weapon.offhand icewind:update/music_disc/stal
+execute as @a[gamemode=!spectator] at @s if items entity @s player.cursor minecraft:music_disc_stal unless items entity @s player.cursor *[minecraft:custom_model_data={strings:["argentine"]}] run item modify entity @s player.cursor icewind:update/music_disc/stal
+
+execute as @a[gamemode=!spectator] at @s if items entity @s weapon.mainhand minecraft:music_disc_ward unless items entity @s weapon.mainhand *[minecraft:custom_model_data={strings:["catfish"]}] run item modify entity @s weapon.mainhand icewind:update/music_disc/ward
+execute as @a[gamemode=!spectator] at @s if items entity @s weapon.offhand minecraft:music_disc_ward unless items entity @s weapon.offhand *[minecraft:custom_model_data={strings:["catfish"]}] run item modify entity @s weapon.offhand icewind:update/music_disc/ward
+execute as @a[gamemode=!spectator] at @s if items entity @s player.cursor minecraft:music_disc_ward unless items entity @s player.cursor *[minecraft:custom_model_data={strings:["catfish"]}] run item modify entity @s player.cursor icewind:update/music_disc/ward
 
 execute as @a at @s if items entity @s container.* #icewind:crafting/hand_fan run recipe give @s icewind:hand_fan
 execute as @a at @s if items entity @s container.* #icewind:crafting/waterskin run recipe give @s icewind:waterskin
