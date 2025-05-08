@@ -1,78 +1,80 @@
 {
-    "pools": [
-      {
-        "rolls": {
-          "type": "minecraft:uniform",
-          "min": 0.2,
-          "max": 1
-        },
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:cookie",
-            "functions": [
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:custom_model_data": {
-                    "strings": [
-                      "earthworm"
-                    ]
-                  },
-                  "minecraft:item_name": "{\"translate\":\"item.icewind.earthworm\"}",
-                  "!minecraft:jukebox_playable": {},
-                  "minecraft:rarity": "common",
-                  "minecraft:consumable": {
-                    "consume_seconds": 1.3,
-                    "on_consume_effects": [
-                      {
-                        "type": "minecraft:apply_effects",
-                        "effects": [
-                          {
-                            "id": "minecraft:nausea",
-                            "amplifier": 2,
-                            "duration": 120
-                          }
-                        ],
-                        "probability": 0.5
-                      },
-                      {
-                        "type": "minecraft:apply_effects",
-                        "effects": [
-                          {
-                            "id": "minecraft:poison",
-                            "amplifier": 0,
-                            "duration": 140
-                          }
-                        ],
-                        "probability": 0.2
-                      },
-                      {
-                        "type": "minecraft:apply_effects",
-                        "effects": [
-                          {
-                            "id": "minecraft:hunger",
-                            "amplifier": 1,
-                            "duration": 100
-                          }
-                        ],
-                        "probability": 0.3
-                      }
-                    ]
-                  },
-                  "minecraft:food": {
-                    "nutrition": 0,
-                    "saturation": 0.5
-                  },
-                  "minecraft:max_stack_size": 64,
-                  "minecraft:custom_data": {
-                    "isbait": "true"
-                  }
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 0.2,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cookie",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": {
+                  "strings": [
+                    "earthworm"
+                  ]
+                },
+                "minecraft:item_name": {
+                  "translate": "item.icewind.earthworm"
+                },
+                "!minecraft:jukebox_playable": {},
+                "minecraft:rarity": "common",
+                "minecraft:consumable": {
+                  "consume_seconds": 1.3,
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:nausea",
+                          "amplifier": 2,
+                          "duration": 120
+                        }
+                      ],
+                      "probability": 0.5
+                    },
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:poison",
+                          "amplifier": 0,
+                          "duration": 140
+                        }
+                      ],
+                      "probability": 0.2
+                    },
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:hunger",
+                          "amplifier": 1,
+                          "duration": 100
+                        }
+                      ],
+                      "probability": 0.3
+                    }
+                  ]
+                },
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0.5
+                },
+                "minecraft:max_stack_size": 64,
+                "minecraft:custom_data": {
+                  "isbait": "true"
                 }
               }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
